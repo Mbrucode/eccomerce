@@ -1,0 +1,374 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Maintenance Pro\n"
+"POT-Creation-Date: 2016-08-08 15:06+0300\n"
+"PO-Revision-Date: 2016-08-08 15:06+0300\n"
+"Last-Translator: Petr Rohan <rohan@infinitymedia.cz>\n"
+"Language-Team: Petr Rohan <info@infinitymedia.cz>\n"
+"Language: cs_CZ\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.8\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;"
+"_n_noop:1,2;_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+
+#: includes/_message.php:5
+msgid "Download free version"
+msgstr "Stáhněte si verzi ZDARMA"
+
+#: includes/_message.php:8
+msgid "Maintenance free is required"
+msgstr "Nainstalujte Maintenance free"
+
+#: includes/_message.php:8
+msgid "Please download and install free basic version to get PRO features"
+msgstr ""
+"Prosím stáhněte si a nainstalujte záklati verzi MAINTENANCE, aby jste mohli "
+"využít verzi PRO."
+
+#: includes/functions.php:105 includes/functions.php:827
+msgid "Days"
+msgstr "Dní"
+
+#: includes/functions.php:106 includes/functions.php:840
+msgid "Hours"
+msgstr "Hodin"
+
+#: includes/functions.php:107 includes/functions.php:853
+msgid "Minutes"
+msgstr "Minut"
+
+#: includes/functions.php:108 includes/functions.php:866
+msgid "Seconds"
+msgstr "Sekund"
+
+#: includes/functions.php:192
+msgid "Splash Page"
+msgstr "stránka spořiče"
+
+#: includes/functions.php:198
+msgid "Exclude User Roles"
+msgstr "Vyloučit Uživatelské role"
+
+#: includes/functions.php:204 includes/functions.php:407
+msgid "Gallery"
+msgstr "Galerie"
+
+#: includes/functions.php:210
+msgid "Countdown"
+msgstr "Odpočítávání"
+
+#: includes/functions.php:217
+msgid "HTML in PopUp window"
+msgstr "HTML ve vyskakovacím okně"
+
+#: includes/functions.php:223
+msgid "eMail Lists"
+msgstr "eMail List"
+
+#: includes/functions.php:229
+msgid "Social"
+msgstr "Sociální sítě + odkazy"
+
+#: includes/functions.php:238
+msgid "Enable preloader"
+msgstr "Aktivovat předpětí"
+
+#: includes/functions.php:250
+msgid "Enable Enter site button"
+msgstr "Aktivovat Enter webu"
+
+#: includes/functions.php:265
+msgid "Text for button"
+msgstr "Text na tlačítku"
+
+#: includes/functions.php:408
+msgid "Single video link"
+msgstr "Odkaz na video"
+
+#: includes/functions.php:418
+msgid "Add elements"
+msgstr "Přidat prvek"
+
+#: includes/functions.php:419
+msgid "Remove all elements"
+msgstr "Odstranit vše"
+
+#: includes/functions.php:426
+msgid "select to set overlays"
+msgstr "Nastavení překrytí"
+
+#: includes/functions.php:427
+msgid "no overlay"
+msgstr "Bez překrytí"
+
+#: includes/functions.php:429
+#, php-format
+msgid "%1$s example"
+msgstr "%1$s příklad"
+
+#: includes/functions.php:442
+msgid "Delay Time"
+msgstr "Spoždění"
+
+#: includes/functions.php:453
+msgid "Choose video hosting"
+msgstr "Zvolte Video Hosting"
+
+#: includes/functions.php:468
+msgid "Set link in YouTube video"
+msgstr "Nastavit odkaz na video YouTube"
+
+#: includes/functions.php:471
+msgid "Set link in Vimeo video"
+msgstr "Nastavit odkaz na Vimeo videa"
+
+#: includes/functions.php:477 includes/functions.php:478
+msgid "Example link format: "
+msgstr "Formát odkaz Příklad:"
+
+#: includes/functions.php:485
+msgid "Turn On video sound"
+msgstr "Zapnout zvuk videa"
+
+#: includes/functions.php:497
+msgid "Turn On video loop"
+msgstr "Zapnout videosmyčce"
+
+#: includes/functions.php:560
+msgid "Set expiry date"
+msgstr "Datum ukončení"
+
+#: includes/functions.php:567
+msgid "Time Start"
+msgstr "Start - čas"
+
+#: includes/functions.php:576
+msgid "Date Start"
+msgstr "Start - Datum"
+
+#: includes/functions.php:587
+msgid "Time end"
+msgstr "Konec - čas"
+
+#: includes/functions.php:594
+msgid "Date end"
+msgstr "Konec - datum"
+
+#: includes/functions.php:608
+msgid "Type"
+msgstr "Typ"
+
+#: includes/functions.php:612
+msgid "Simple"
+msgstr "Jednoduchý"
+
+#: includes/functions.php:613
+msgid "Boxed"
+msgstr "boxoval"
+
+#: includes/functions.php:614
+msgid "Circle"
+msgstr "Kruh"
+
+#: includes/functions.php:621
+msgid "Set color scheme"
+msgstr "Vyberte si barevné téma"
+
+#: includes/functions.php:630
+msgid "Set font color"
+msgstr "Nastavit barvu písma"
+
+#: includes/functions.php:638
+msgid "Font family"
+msgstr "Font"
+
+#: includes/functions.php:650
+msgid "Open website after countdown expired"
+msgstr "Otevřít stránky po vypršení odpočítávání"
+
+#: includes/functions.php:660
+msgid "Display countdown"
+msgstr "displej odpočítávání"
+
+#: includes/functions.php:680
+msgid "Select user roles"
+msgstr "Vyberte uživatelské role"
+
+#: includes/functions.php:912
+msgid "Check the correct input \"APP ID\" or \"LIST ID\" to MailChimp access!"
+msgstr ""
+"Zkontrolujte vstupní \"APP ID\" nebo \"LIST ID\" v přístupu do MailChimpu!"
+
+#: includes/functions.php:926
+#, php-format
+msgid "Campaing Monitor Erorr: %s !"
+msgstr "Chyba Campaing Monitor: %s !"
+
+#: includes/functions.php:977
+msgid "Text for \"Read More\" button"
+msgstr "Text pro \"Další informace\" tlačítko"
+
+#: includes/functions.php:1001
+msgid "Mail Chimp"
+msgstr "Mail Chimp"
+
+#: includes/functions.php:1002
+msgid "Campaign Monitor"
+msgstr "Campaign Monitor"
+
+#: includes/functions.php:1015 includes/functions.php:1367
+#: maintenance-pro.php:124
+msgid "Be the first to know when website is ready"
+msgstr "Nenechte si ujít spuštění naších stránek"
+
+#: includes/functions.php:1022
+msgid "Subscribe form title"
+msgstr "Nadpis pro přihlášení"
+
+#: includes/functions.php:1031
+msgid "Mailing List"
+msgstr "Mailingová platforma"
+
+#: includes/functions.php:1045 includes/functions.php:1083
+msgid "API Key"
+msgstr "API Key"
+
+#: includes/functions.php:1054 includes/functions.php:1092
+msgid "List ID"
+msgstr "List ID"
+
+#: includes/functions.php:1064
+msgid "Subscriber will receive confirmation email"
+msgstr "Předplatitel obdrží potvrzovací e-mail"
+
+#: includes/functions.php:1074
+msgid "Client ID"
+msgstr "Client ID"
+
+#: includes/functions.php:1102
+msgid "Get All Available lists"
+msgstr "Zobrazot všechny dostupné seznamy"
+
+#: includes/functions.php:1200
+msgid "Vkontakte"
+msgstr ""
+
+#: includes/functions.php:1201
+msgid "Facebook"
+msgstr "Facebook"
+
+#: includes/functions.php:1202
+msgid "Twitter"
+msgstr "Twitter"
+
+#: includes/functions.php:1203
+msgid "Google+"
+msgstr "Google+"
+
+#: includes/functions.php:1204
+msgid "SoundCloud"
+msgstr ""
+
+#: includes/functions.php:1205
+msgid "LinkedIn"
+msgstr "LinkedIn"
+
+#: includes/functions.php:1206
+msgid "Dribbble"
+msgstr "Dribbble"
+
+#: includes/functions.php:1207
+msgid "Behance"
+msgstr "Behance"
+
+#: includes/functions.php:1208
+msgid "Tumblr"
+msgstr "Tumblr"
+
+#: includes/functions.php:1209
+msgid "Flickr"
+msgstr "Flickr"
+
+#: includes/functions.php:1210
+msgid "Pinterest"
+msgstr "Pinterest"
+
+#: includes/functions.php:1211
+msgid "Vimeo"
+msgstr "Vimeo"
+
+#: includes/functions.php:1212
+msgid "YouTube"
+msgstr "YouTube"
+
+#: includes/functions.php:1213
+msgid "Skype"
+msgstr "Skype"
+
+#: includes/functions.php:1214
+msgid "Instagram"
+msgstr "Instagram"
+
+#: includes/functions.php:1215
+msgid "Foursquare"
+msgstr "Foursquare"
+
+#: includes/functions.php:1216
+msgid "E-mail"
+msgstr "E-mail"
+
+#: includes/functions.php:1273
+msgid "Thanks for subscribing!"
+msgstr "Děkujeme Vám za přihlášení"
+
+#: includes/functions.php:1378
+msgid "Email"
+msgstr "Email"
+
+#: includes/functions.php:1380
+msgid "Subscribe"
+msgstr "Přihlásit"
+
+#~ msgid "Turn on confirmation email"
+#~ msgstr "Zapnutí potvrzovacím e-mailu"
+
+#~ msgid "Turn off maintenance after expiry"
+#~ msgstr "Vypnutí údržbu po uplynutí"
+
+#~ msgid "Turn off the countdown"
+#~ msgstr "Vypnout odpočítávání"
+
+#~ msgid "Edit single link"
+#~ msgstr "Vložte link na video"
+
+#~ msgid "YouTube or Vimeo"
+#~ msgstr "YouTube nebo Vimeo"
+
+#~ msgid "Turn video sound on (Youtube only)"
+#~ msgstr "Otočte zvuku videa na (pouze Youtube)"
+
+#~ msgid "Turn on video loop (Youtube only)"
+#~ msgstr "Zapněte videosmyčce (pouze Youtube)"
+
+#~ msgid "Maintenance off after expiry"
+#~ msgstr "Vypnout Maintenance po skončení odpočtu"
+
+#~ msgid "User roles"
+#~ msgstr "Uživatelské oprávnění"
+
+#~ msgid "HTML"
+#~ msgstr "HTML"
+
+#~ msgid "Set font size"
+#~ msgstr "Velikost fontu"
+
+#~ msgid "Read more"
+#~ msgstr "Více.."

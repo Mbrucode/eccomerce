@@ -1,0 +1,111 @@
+<?php
+/**
+ * Adds gg_Twitter_Widget widget.
+ */
+require_once get_template_directory() . '/lib/twitter/twitter.php';
+
+class villenoir_Twitter_Feed_Widget extends WP_Widget {
+
+  function __construct() {
+      parent::__construct(
+          // base ID of the widget
+          'villenoir_Twitter_Feed_Widget',
+          // name of the widget
+          esc_html__('Twitter Widget', 'villenoir' ),
+          // widget options
+          array (
+              'description' => esc_html__( 'Twitter Widget', 'villenoir' ),
+              'classname' => 'twitter-widget',
+          )
+      );
+  }
+
+  function form($instance) {
+    //displays widget form in admin dashboard
+    $defaults = array (
+      'title' => '',
+      'username' => '',
+      'link' => '#',
+      'limit' => 3
+    );
+    $instance = wp_parse_args((array) $instance, $defaults );?>
+    
+    <p>
+      <label for="<?php echo esc_attr( $this->get_field_id( 'title' ) ); ?>"><?php esc_html_e( 'Title:', 'villenoir' ); ?></label> 
+      <input class="widefat" id="<?php echo esc_attr( $this->get_field_id( 'title' ) ); ?>" name="<?php echo esc_attr( $this->get_field_name( 'title' ) ); ?>" type="text" value="<?php echo esc_attr( $title ); ?>" />
+    </p>
+
+    <p>
+      <label for="<?php echo esc_attr( $this->get_field_id( 'username' ) ); ?>"><?php esc_html_e( 'Username:', 'villenoir' ); ?></label> 
+      <input class="widefat" id="<?php echo esc_attr( $this->get_field_id( 'username' ) ); ?>" name="<?php echo esc_attr( $this->get_field_name( 'username' ) ); ?>" type="text" value="<?php echo esc_attr( $username ); ?>" />
+    </p>
+
+    <p>
+      <label for="<?php echo esc_attr( $this->get_field_id( 'link' ) ); ?>"><?php esc_html_e( 'Twitter link:', 'villenoir' ); ?></label> 
+      <input class="widefat" id="<?php echo esc_attr( $this->get_field_id( 'link' ) ); ?>" name="<?php echo esc_attr( $this->get_field_name( 'link' ) ); ?>" type="text" value="<?php echo esc_url( $link ); ?>" />
+    </p>
+
+
+    <p>
+    <label for="<?php echo esc_attr( $this->get_field_id( 'limit' ) ); ?>"><?php esc_html_e( 'Limit:', 'villenoir' ); ?></label> 
+      <select id="<?php echo esc_attr($this->get_field_id( 'limit' )); ?>" name="<?php echo esc_attr($this->get_field_name( 'limit' )); ?>">
+        
+        <?php for( $i = 1; $i <= 20; $i++ ) : ?>
+        <option value="<?php echo esc_attr($i); ?>" <?php selected( $instance['limit'], $i ); ?> <?php echo esc_html($i); ?></option>
+        <?php endfor; ?>
+      
+      </select>
+    </p>                
+     
+<?php }
+  function widget($args, $instance) {
+    //displays the widget
+     extract ($args);
+     //var_dump($instance);
+     $title =   $instance['title'];
+     $link =   $instance['link'];
+    
+     echo wp_kses_post($before_widget);
+
+     if (!empty($title)) {
+      echo wp_kses_post( $before_title . $title . $after_title );
+     }
+
+     echo '<ul>';
+     
+     $tweets = villenoir_get_tweets($instance['limit'], $instance['username']);
+      if(is_array($tweets)){
+        foreach($tweets as $tweet){
+          $the_tweet = villenoir_process_tweets($tweet, $instance['username'], $link);
+          if ($the_tweet) {
+            echo '<li>'.$the_tweet.'</li>';
+          }
+          else {
+            echo '<li class="notweets">'.esc_html__('No tweets found','villenoir').'</li>';
+            break;
+          }
+        }
+      }
+     
+     
+     echo '</ul>';
+
+     echo wp_kses_post($after_widget);
+  }
+  function update($new_instance, $old_instance) {
+    //save widdget settings
+    $instance = $old_instance;
+    $instance['title'] = strip_tags($new_instance['title']);
+    $instance['username'] = strip_tags($new_instance['username']);
+    $instance['link'] =  $new_instance['link'];
+    $instance['limit'] = strip_tags( $new_instance['limit'] );
+    return $instance;
+    
+  }
+}
+
+// register gg_Twitter_Widget 
+function register_gg_twitter_widget() {
+    register_widget( 'villenoir_Twitter_Feed_Widget' );
+}
+add_action( 'widgets_init', 'register_gg_twitter_widget' );

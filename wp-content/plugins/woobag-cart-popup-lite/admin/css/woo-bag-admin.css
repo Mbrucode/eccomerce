@@ -1,0 +1,700 @@
+/**
+* General CSS
+*/
+label{
+    font-weight: normal;
+}
+
+.wb_backend_template_preview_wrapper{
+    float: left;
+}
+/**
+* Admin Side CSS
+*/
+.wb_setting_wrapper .wb_setting_logo{
+    background: url('../images/wp_setting_icon.png');
+    background-repeat: no-repeat;
+    background-size: 19px 25px;
+    padding-left: 36px;
+    background-position: 9px 10px;
+    font-size: 20px;
+}
+.wb_setting_wrapper .wb_setting_logo i{
+    font-size: 11px;
+    vertical-align: middle;
+}
+.wb_setting_wrapper.row,.wb_setting_wrapper .row{
+    float: left;
+    width: 100%;
+}
+.nopadding {
+    padding: 0 !important;
+    margin: 0 !important;
+}
+.wb_padding{
+    padding: 9px 7px !important;
+    margin: 0 !important;
+}
+.wb_setting_options_wrapper{
+    width: 100%;
+    float: left;
+}
+.wb_setting_fields{
+    padding: 5px; 
+    margin-bottom: 0px;
+}
+.wb_settings{
+    /*border: 1px solid #ccc;*/
+}
+.wb_tables_data{
+    margin-bottom: 6px;
+}
+.wb_tables_data table tr{
+    float: left;
+    width: 100%;
+}
+.wb_tables_data table th{
+    width: 34%;
+    float: left;
+}
+.wb_tables_data table td{
+    width: 66%;
+    float: left;
+}
+.wb_tables_data h3 span{
+    float: right;
+}
+.wb_tables_data h3 span i{
+    font-size: 23px;
+}
+.wb_red{
+    color: red !important;
+}
+.wb_bold{
+    font-weight: bold !important;
+}
+.wb_section_description{
+    font-size: 12px;
+    font-weight: normal;
+    border: 1px solid #A9A9A9;
+    padding: 7px;
+    border-radius: 4px;
+    background-color: #fff;
+    color: #717171;
+}
+.wb_setting_section_description{
+    font-weight: bold;
+}
+.wb_fields_data{
+    padding:10px;
+}
+.accordion-content{
+    display: none;
+}
+#wb_sec_title{
+    margin-top: 0px;
+    border: 1px solid #ccc;
+    padding: 6px 15px 5px;
+    background-color: #0074A2;
+    color: #fff;
+    cursor: pointer;
+    margin-bottom: 0px;
+    border-radius: 5px;
+    line-height: 27px;
+    font-size: 18px;
+}
+#wb_sec_title:hover{
+    background-color: #0D84B3;
+}
+.wb_setting_single_input{
+    float: left;
+    width: 100%;
+}
+.wb_setting_fields input[type=text], 
+input[type=date], input[type=datetime-local], 
+input[type=datetime], input[type=email], 
+input[type=month], input[type=number], 
+input[type=password],  input[type=search], 
+input[type=tel], input[type=text], input[type=time],
+input[type=url], input[type=week], select, 
+textarea{
+    width: 320px !important;
+    float: left;
+}
+.wb_setting_fields select, input[type=text]{
+    height: 36px !important;
+}
+.wb_export_button{
+    line-height: 34px !important;
+    height: 34px !important;
+}
+.wb_setting_fields label{
+    float: left;
+    padding-right: 18px;
+    margin-top: 8px;
+}
+.wb_setting_single_input_help{
+    float: left;
+    width: 33px;
+    height: 34px;
+    border-top-right-radius: 6px !important;
+    border-bottom-right-radius: 6px !important;
+    padding: 8px 8px;
+}
+.wb_setting_help_text{
+    float: right;
+    line-height: 18px;
+    padding: 7px 2px 0px 10px;
+    cursor: help;
+}
+.wb_setting_help_text i{
+    font-size: 20px;
+}
+.wb_image_position_wrapper{
+    margin-left: 20px;
+    width: 320px;
+    float: left;
+    display: block;
+    height: 55px;
+}
+.wb_image_position_wrapper i{
+    cursor: pointer;
+    font-size: 26px;
+    margin-right: 10px;
+    position: absolute;
+}
+.wb_image_position_wrapper i.fa-arrow-circle-up{
+    margin-left: 30px;
+    margin-top: -25px;
+}
+.wb_image_position_wrapper i.fa-arrow-circle-down{
+    margin-left: 30px;
+    margin-top: 25px;
+}
+.wb_image_position_wrapper i.fa-arrow-circle-right{
+    margin-left: 60px;
+}
+.wb_image_position_wrapper i.fa-refresh {
+    margin-left: 102px;
+}
+.wb_setting_color_input_field input{
+    border-right: 40px solid;
+}
+.wb_setting_single_input_front_end{
+    font-style: italic;
+    margin-top: 4px;
+    float: left;
+    font-family: -webkit-body;
+}
+.colpick_dark{
+    z-index:2 !important;
+}
+
+.wb_submit_form{
+    margin-left: 8px;
+    margin-top: 0px !important;
+    margin-bottom: 0px;
+}
+.wb_widget_image{
+    width: 100%;
+    float: left;
+    text-align: center;
+    border: 1px solid #ccc;
+}
+.wb_setting_form_buttons{
+    float: left;
+}
+.wb_setting_status{
+    float: right;
+}
+.wb_template_action_buttons input, .wb_export_button{
+    margin-top: 4px !important;
+}
+
+input.woo_bag_submit_button,
+input.wb_active_template,
+input.wb_create_new_template,
+input.wb_edit_template_name,
+input.wb_delete_template,
+input.wb_edit_template,
+input.wb_conform_required_action,
+input.wb_front_preview_template,
+input.wb_get_shortcode
+{
+    height: 35px !important;
+}
+.wb_template_top_buttons a{
+    line-height: 34px !important;
+}
+.wb_check_all_label{
+    width: 100%;
+}
+.wb_grey{
+    background: transparent !important;
+}
+.wb_grey{
+    text-shadow: none !important;
+    background-color: #e0e0e0 !important;
+    border-color: #630404 !important;
+    color: #0074a2 !important;
+    font-weight: 600;
+    border-width: 0 !important;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+    line-height: 35px;
+    height: 35px !important;
+}
+.wb_grey:hover{
+    background-color: #cccccc !important;
+}
+.wb_disable_button{
+    background-color: #cccccc !important;
+    cursor: no-drop !important;
+}
+.wb_disable_button:hover{
+    background-color: #cccccc !important;
+}
+.wb_template_preview_td img{
+    cursor: pointer;
+}
+#wb_template_preview .modal-body{
+    text-align: center;
+}
+.wb_modals .modal-footer{
+    padding: 15px 15px 0px 15px;
+    margin-top: 7px;
+}
+.wb_template_name,.wb_restore_template_name{
+    margin: 0px 9px !important;
+    border: 1px solid #ccc !important;
+    height: 35px !important;
+}
+span.wb_current_template{
+    font-size: 20px;
+    font-weight: normal !important;
+}
+span.wb_view_template{
+    font-size: 18px;
+    font-weight: normal !important;
+}
+.wb_use_template_form select.wb_template_name{
+    width: 20% !important;
+    margin: 4px !important;
+    border: 1px solid #ccc !important;
+    height: 35px;
+}
+.template_group, .template_group_setting{
+    display:none;
+    width: 100%;
+    float: left;
+}
+.template_group form , .template_group_setting form {
+    margin-bottom: 14px;
+}
+
+
+/**
+* Spinner and message CSS
+*/
+.wb_setting_spinner_overlay{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #000;
+    opacity: 0.5;
+    display: none;
+    opacity: 0.7;
+    z-index: 9999;
+}
+.wb_setting_spinner_wrapper{
+    z-index: 9999;
+    box-shadow: 0 1px 1px 0 rgba(0,0,0,.1);
+    opacity: 1 !important;
+    display: none;
+}
+.wb_setting_spinner{
+    z-index: 10000;
+}
+.wb_setting_spinner i{
+    font-size: 75px;
+    color: #fff;
+}
+.wb_setting_message{
+    background: #fff;
+    border-left: 0;
+    -webkit-box-shadow: 0 1px 1px 0 rgba(0,0,0,.1);
+    box-shadow: 0 1px 1px 0 rgba(0,0,0,.1);
+    margin: 5px 15px 2px;
+    font-size: 18px;
+    z-index: 10001;
+    max-width: 500px;
+    text-align: center;
+}
+.wb_setting_message .wb_setting_success, .wb_setting_message .wb_setting_error {
+    padding: 18px 12px;
+    border-left: 4px solid #fff;
+}
+.wb_setting_message .wb_setting_success{
+    border-color: #7ad03a;
+}
+.wb_setting_message .wb_setting_error{
+    border-color: red;
+}
+.fontawesome-select {
+    font-family: 'FontAwesome', 'Helvetica';
+}
+
+/**
+* WooBag Backend CSS
+*/
+
+#wb_cart_back_end_wrapper .wb_loading_image{
+    position: absolute !important;
+}
+#wb_cart_back_end_wrapper .wb_loading_image .wb_display_loading_image{
+    position: relative !important;
+    display: block;
+}
+#wb_cart_back_end_wrapper .button{
+    box-shadow: none !important;
+    line-height: inherit !important;
+}
+.wb_display_widget_backend .buttons a{
+    border: 1px solid #ccc;
+    font-size: 16px;
+    padding: 6px 19px;
+    color: #000;
+    text-shadow: none !important;
+}
+.wb_display_widget_backend .wb_cart_product {
+    padding: 0;
+}
+.wb_display_widget_backend{
+    min-width: 350px;
+    float: left;
+    color: #000;
+    z-index: 9999;
+}
+.wb_display_widget_backend .wb_menu_icon{
+    margin-right: 3px;
+}
+.wb_display_widget_backend .wb_display_widget_cart {
+    display: block;
+    position: relative;
+    float: left;
+}
+
+.wb_display_widget_backend .buttons a:hover{
+    color: #000;
+    background-color: #ccc;
+}
+.wb_display_widget_backend #bag_carousel_prev, .wb_display_widget_backend #bag_carousel_next{
+    padding: 6px 0 6px;
+}
+#wb_template_listing{
+    background-color: #FFFFFF;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+.wb_all_template_list .wb_template_title{
+    background-color: #32373c;
+    color: #FFFFFF;
+    font-weight: bold;
+}
+.wb_all_template_list .wb_template_title i {
+    color: #FFFFFF;
+}
+.wb_all_template_list .even{
+    background-color: #ecf0f1;
+}
+#wb_template_listing > thead > tr > th{
+    padding:12px 11px;
+    vertical-align: middle;
+}
+#wb_template_listing > tbody > tr > td{
+    padding:12px 11px;
+    vertical-align: middle;
+}
+
+.modal-content,.modal-header,.modal-body,.modal-footer{
+    float: left;
+    width: 100%;
+}
+#toplevel_page_woo-bag .menu-icon-generic .wp-menu-image:before{
+    content: "\e03d";
+    width: 20px;
+    height: 20px;
+    font-size: 20px;
+    line-height: 1;
+    font-family: WooCommerce!important;
+    text-decoration: inherit;
+}
+.wb_hidden_fields{
+    display: none;
+}
+
+.wb_admin_cart_wrapper .wb_admin_cart{
+    float: left;
+    margin-left: 10px;
+}
+.wb_admin_cart_wrapper .wb_admin_cart .wb_admin_cart_shortcode{
+    position: fixed;
+    z-index: 10;
+    margin-top: 43px;
+}
+.tooltip{
+    z-index: 9999;
+}
+.tooltip i{
+    width: 18px;
+    text-align: center;
+    position: absolute;
+    right: -1px;
+    top: -8px;
+    font-size: 14px;
+    cursor: pointer;
+    background-color: #fff;
+    border: 2px solid #000;
+    border-radius: 52px;
+}
+.tooltip-inner {
+    max-width: 270px;
+    font-weight: normal;
+    color: #000;
+    opacity: 1;
+    background-color: #F1F1F1;
+    text-align: left;
+    font-family: sans-serif;
+    border: 2px solid #000;
+    overflow: hidden;
+    border-radius: 5px;
+}
+.tooltip.right .tooltip-arrow {
+    border-right-color: #000;
+}
+.tooltip.in {
+    opacity: 1;
+}
+/**
+* Admin About Css
+*/
+.about-wrap h4{
+    font-weight: bold;
+}
+.wb_about_wrapper .wb_about_title h1{
+    margin: 0;
+}
+.wb_about_text_wrapper{
+    margin-top: 10px;
+    margin-left: 0;
+    padding-left: 0;
+}
+.wb_about_text_wrapper .wb_about_text{
+    font-weight: 400;
+    line-height: 1.6em;
+    font-size: 19px;
+    margin: 0;
+}
+.wb_about_actions{
+    margin-top: 16px;
+}
+.wb_about_actions .wb_actions{
+    float: left;
+    margin-right: 8px;
+}
+hr.fancy-line {
+    height: 1px;
+    background: -webkit-linear-gradient(left, rgb(0, 116, 162), rgba(255,0,0,0));
+    background: -o-linear-gradient(right, rgba(255,0,0,1), rgba(255,0,0,0));
+    background: -moz-linear-gradient(right, rgba(255,0,0,1), rgba(255,0,0,0));
+    background: linear-gradient(to right, rgb(0, 116, 162), rgba(255,0,0,0));
+    margin: 19px 0 0 0;
+    width: 100%;
+}
+.wb_features .five-col>div {
+    position: relative;
+    width: 20%;
+    margin-right: 0;
+    float: left;
+}
+.wb_features .four-col>div {
+    position: relative;
+    width: 25%;
+    margin-right: 0;
+    float: left;
+}
+.wb_features .feature-section>div{
+    padding: 16px 11px;
+}
+.wb_white_background{
+    background-color: #FFFFFF;
+}
+.wb_about_right_content_wrapper .right_content{
+    margin-top: 15px;
+}
+.wb_about_right_content_wrapper hr{
+    margin: 0;
+}
+.wb_about_right_content_wrapper .wb_white_background{
+    padding: 1px 10px;
+}
+.wb_about_company{
+    margin-top: 10px;
+}
+.wb_about_company p{
+    margin-top: 15px;
+}
+
+@media (min-width: 400px) and  (max-width: 689px){
+    .wb_features .five-col>div,.wb_features .four-col>div{
+        width: 33.3333333%;
+    }
+}
+@media (max-width: 399px){
+    .wb_features .five-col>div,.wb_features .four-col>div{
+        width: 100%;
+    }
+}
+@media (min-width: 540px) and  (max-width: 991px){
+    .wb_about_right_content_wrapper .right_content{
+        width: 47%;
+        float: left;
+        margin-right: 11px;
+    }
+}
+@media (max-width: 539px){
+    .wb_about_right_content_wrapper .right_content{
+        width: 100%;
+    }
+}
+@media (min-width: 490px) and  (max-width: 991px){
+    .wb_about_logo_wrapper{
+        width: 25%;
+        float: left;
+    }
+    .wb_about_title{
+        width: 75%;
+        float: left;
+    }
+
+}
+@media (max-width: 490px){
+    .wb_about_logo_wrapper{
+        display: none;
+    }
+}
+@media (max-width: 991px){
+    .wb_admin_cart_wrapper .wb_admin_cart .wb_admin_cart_shortcode{
+        position: initial;
+        float: left;
+        width: 300px;
+    }
+    .wb_admin_cart_arear{
+        width: 100%;
+        float: left;
+    }
+}
+
+.wb_front_end_button_wrapper{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.wb_admin_icon_wrapper{
+    width: 100%;
+}
+.wb_admin_icon_wrapper h3{
+    margin: 0;
+}
+
+.wb_import_template_form,.wb_import_single_input, 
+.wb_import_single_input label, .wb_import_single_input input[type=text], 
+.wb_import_single_input textArea,
+.wb_create_new_template_dialog, .wb_create_new_template_single_input, 
+.wb_create_new_template_single_input label,
+.wb_create_new_template_single_input input[type=text]{
+    width: 100% !important;
+    float: left;
+    cursor: auto;
+}
+.wb_import_single_input input[type=submit],.wb_download_button,
+.wb_create_new_template_single_input input[type=button]{
+    height: 35px !important;
+}
+.wb_create_new_template_single_input input[type=button]{
+    margin-top: 10px !important;
+}
+.wb_create_new_template_error{
+    width: 100%;
+    float: left;
+    display: none;
+}
+.wb_import_single_input.wb_or{
+    position: relative;
+    text-align: center;
+}
+.wb_import_single_input.wb_or .wb_import_or{
+    background: #fff;
+    padding: 0 15px;
+    position: relative;
+    z-index: 1;
+}
+.wb_import_single_input.wb_or:before {
+    background: #ddd;
+    content: "";
+    display: block;
+    height: 1px;
+    position: absolute;
+    top: 50%;
+    width: 100%;
+}
+
+.wb_import_single_input.wb_or:before {
+    left: 0;
+}
+
+.wb_modal_wrapper,#wb_create_new_template_dialog{
+    z-index: 15 !important;
+}
+
+/**
+* Setting Banner
+*/
+
+.wb_cart_setting_banner{
+    background-color: #464646;
+    width: 97%;
+    margin-top: 5px;
+    height: auto;
+    padding: 10px 20px 1px 20px;
+}
+.wb_cart_setting_banner a{
+    font-size: 16px !important; 
+    padding: 12px 24px !important;
+    height: 50px !important;
+    float: right !important;
+    background-color: #D82027 !important;
+    background: #D82027 !important;
+    border-color: #D82027 !important;
+}
+.wb_cart_setting_banner a:hover{
+    background-color: #E62B32 !important;
+}
+.wb_cart_setting_banner h1,.wb_cart_setting_banner p{
+    color: #ffffff;
+}
+
+
+.about-wrap .wb_cart_setting_banner{
+    background: transparent;
+    padding: 0;
+    width: 100%;
+}
+.about-wrap .wb_cart_setting_banner a{
+    float: none !important;
+}

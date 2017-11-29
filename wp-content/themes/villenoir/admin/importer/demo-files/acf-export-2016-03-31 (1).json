@@ -1,0 +1,3799 @@
+[
+    {
+        "key": "group_546cd8557271d",
+        "title": "Page Layout",
+        "fields": [
+            {
+                "key": "field_546cd877c748e",
+                "label": "Page layout",
+                "name": "gg_page_layout_select",
+                "type": "select",
+                "instructions": "Select the page layout",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "choices": {
+                    "with_left_sidebar": "With left sidebar",
+                    "with_right_sidebar": "With right sidebar",
+                    "no_sidebar": "No sidebar"
+                },
+                "default_value": {
+                    "with_left_sidebar": "with_left_sidebar"
+                },
+                "allow_null": 0,
+                "multiple": 0,
+                "ui": 0,
+                "ajax": 0,
+                "placeholder": "",
+                "disabled": 0,
+                "readonly": 0
+            },
+            {
+                "key": "field_559664aeaedce",
+                "label": "Select sidebar",
+                "name": "gg_select_sidebar",
+                "type": "select",
+                "instructions": "Select a sidebar. You can create unlimited sidebars in Appearance >> Theme options.",
+                "required": 0,
+                "conditional_logic": [
+                    [
+                        {
+                            "field": "field_546cd877c748e",
+                            "operator": "!=",
+                            "value": "no_sidebar"
+                        }
+                    ]
+                ],
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "choices": {
+                    "default-sidebar": "Default Sidebar"
+                },
+                "default_value": [
+
+                ],
+                "allow_null": 0,
+                "multiple": 0,
+                "ui": 0,
+                "ajax": 0,
+                "placeholder": "",
+                "disabled": 0,
+                "readonly": 0
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "post_type",
+                    "operator": "==",
+                    "value": "page"
+                }
+            ],
+            [
+                {
+                    "param": "post_type",
+                    "operator": "==",
+                    "value": "post"
+                }
+            ],
+            [
+                {
+                    "param": "post_type",
+                    "operator": "==",
+                    "value": "product"
+                }
+            ],
+            [
+                {
+                    "param": "post_type",
+                    "operator": "==",
+                    "value": "gallery_cpt"
+                }
+            ]
+        ],
+        "menu_order": 0,
+        "position": "normal",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": "",
+        "active": 1,
+        "description": ""
+    },
+    {
+        "key": "group_55dc10c858ece",
+        "title": "Product Options",
+        "fields": [
+            {
+                "key": "field_55dc10cedb2ba",
+                "label": "Size guide",
+                "name": "gg_product_size_guide",
+                "type": "true_false",
+                "instructions": "Show a size guide button on the product page",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "message": "",
+                "default_value": 0
+            },
+            {
+                "key": "field_55dc11a4db2bb",
+                "label": "Button name",
+                "name": "gg_product_size_guide_name",
+                "type": "text",
+                "instructions": "Insert the button name. E.G.: View size guide",
+                "required": 0,
+                "conditional_logic": [
+                    [
+                        {
+                            "field": "field_55dc10cedb2ba",
+                            "operator": "==",
+                            "value": "1"
+                        }
+                    ]
+                ],
+                "wrapper": {
+                    "width": 50,
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "View size guide",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": "",
+                "readonly": 0,
+                "disabled": 0
+            },
+            {
+                "key": "field_55dc1202db2bc",
+                "label": "Style\/function",
+                "name": "gg_product_size_guide_style",
+                "type": "select",
+                "instructions": "Choose how to display the size guide.",
+                "required": 0,
+                "conditional_logic": [
+                    [
+                        {
+                            "field": "field_55dc10cedb2ba",
+                            "operator": "==",
+                            "value": "1"
+                        }
+                    ]
+                ],
+                "wrapper": {
+                    "width": 50,
+                    "class": "",
+                    "id": ""
+                },
+                "choices": {
+                    "link_to_page": "Link to page",
+                    "external_link": "External link",
+                    "image": "Show an overlay image",
+                    "content": "Content in overlay"
+                },
+                "default_value": {
+                    "content": "Content in overlay"
+                },
+                "allow_null": 0,
+                "multiple": 0,
+                "ui": 0,
+                "ajax": 0,
+                "placeholder": "",
+                "disabled": 0,
+                "readonly": 0
+            },
+            {
+                "key": "field_55dc130592f08",
+                "label": "Page link",
+                "name": "gg_product_size_guide_style_page_link",
+                "type": "page_link",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": [
+                    [
+                        {
+                            "field": "field_55dc10cedb2ba",
+                            "operator": "==",
+                            "value": "1"
+                        },
+                        {
+                            "field": "field_55dc1202db2bc",
+                            "operator": "==",
+                            "value": "link_to_page"
+                        }
+                    ]
+                ],
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "post_type": [
+
+                ],
+                "taxonomy": [
+
+                ],
+                "allow_null": 0,
+                "multiple": 0
+            },
+            {
+                "key": "field_55dc132f92f0a",
+                "label": "External link",
+                "name": "gg_product_size_guide_style_external_link",
+                "type": "url",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": [
+                    [
+                        {
+                            "field": "field_55dc10cedb2ba",
+                            "operator": "==",
+                            "value": "1"
+                        },
+                        {
+                            "field": "field_55dc1202db2bc",
+                            "operator": "==",
+                            "value": "external_link"
+                        }
+                    ]
+                ],
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": ""
+            },
+            {
+                "key": "field_55dc135692f0c",
+                "label": "Image",
+                "name": "gg_product_size_guide_style_image",
+                "type": "image",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": [
+                    [
+                        {
+                            "field": "field_55dc10cedb2ba",
+                            "operator": "==",
+                            "value": "1"
+                        },
+                        {
+                            "field": "field_55dc1202db2bc",
+                            "operator": "==",
+                            "value": "image"
+                        }
+                    ]
+                ],
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "return_format": "url",
+                "preview_size": "thumbnail",
+                "library": "all",
+                "min_width": "",
+                "min_height": "",
+                "min_size": "",
+                "max_width": "",
+                "max_height": "",
+                "max_size": "",
+                "mime_types": ""
+            },
+            {
+                "key": "field_55dc137f92f0e",
+                "label": "Content",
+                "name": "gg_product_size_guide_style_content",
+                "type": "wysiwyg",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": [
+                    [
+                        {
+                            "field": "field_55dc10cedb2ba",
+                            "operator": "==",
+                            "value": "1"
+                        },
+                        {
+                            "field": "field_55dc1202db2bc",
+                            "operator": "==",
+                            "value": "content"
+                        }
+                    ]
+                ],
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "tabs": "all",
+                "toolbar": "full",
+                "media_upload": 1
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "post_type",
+                    "operator": "==",
+                    "value": "product"
+                }
+            ]
+        ],
+        "menu_order": 0,
+        "position": "normal",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": "",
+        "active": 1,
+        "description": ""
+    },
+    {
+        "key": "group_5596602ed43d1",
+        "title": "Theme Options",
+        "fields": [
+            {
+                "key": "field_55ae13b12020a",
+                "label": "General",
+                "name": "",
+                "type": "tab",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "placement": "top",
+                "endpoint": 0
+            },
+            {
+                "key": "field_55ae1562f4257",
+                "label": "Site preloader",
+                "name": "gg_site_preloader",
+                "type": "true_false",
+                "instructions": "Enable\/disable the site preloader",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "message": "",
+                "default_value": 1
+            },
+            {
+                "key": "field_55ae1591f4258",
+                "label": "Retina images",
+                "name": "gg_retina_images",
+                "type": "true_false",
+                "instructions": "Enable\/disable retina images ",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "message": "",
+                "default_value": 1
+            },
+            {
+                "key": "field_55ae15bef4259",
+                "label": "Logo",
+                "name": "",
+                "type": "tab",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "placement": "top",
+                "endpoint": 0
+            },
+            {
+                "key": "field_55ae1701a4117",
+                "label": "Display image logo",
+                "name": "gg_display_image_logo",
+                "type": "true_false",
+                "instructions": "Display an image logo instead of the title.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "message": "",
+                "default_value": 0
+            },
+            {
+                "key": "field_55ae16161c580",
+                "label": "Logo image",
+                "name": "gg_logo_image",
+                "type": "image",
+                "instructions": "Upload the logo image",
+                "required": 0,
+                "conditional_logic": [
+                    [
+                        {
+                            "field": "field_55ae1701a4117",
+                            "operator": "==",
+                            "value": "1"
+                        }
+                    ]
+                ],
+                "wrapper": {
+                    "width": 50,
+                    "class": "",
+                    "id": ""
+                },
+                "return_format": "array",
+                "preview_size": "full",
+                "library": "all",
+                "min_width": "",
+                "min_height": "",
+                "min_size": "",
+                "max_width": "",
+                "max_height": "",
+                "max_size": "",
+                "mime_types": ""
+            },
+            {
+                "key": "field_55ae16c7a4116",
+                "label": "Logo image retina",
+                "name": "gg_logo_image_retina",
+                "type": "image",
+                "instructions": "Upload the retina version of the logo.",
+                "required": 0,
+                "conditional_logic": [
+                    [
+                        {
+                            "field": "field_55ae1701a4117",
+                            "operator": "==",
+                            "value": "1"
+                        }
+                    ]
+                ],
+                "wrapper": {
+                    "width": 50,
+                    "class": "",
+                    "id": ""
+                },
+                "return_format": "array",
+                "preview_size": "thumbnail",
+                "library": "all",
+                "min_width": "",
+                "min_height": "",
+                "min_size": "",
+                "max_width": "",
+                "max_height": "",
+                "max_size": "",
+                "mime_types": ""
+            },
+            {
+                "key": "field_55ae169ea4115",
+                "label": "Logo margins",
+                "name": "gg_logo_margins",
+                "type": "text",
+                "instructions": "Insert the logo margins, if necessary. Eg: 5px 0 0 2px",
+                "required": 0,
+                "conditional_logic": [
+                    [
+                        {
+                            "field": "field_55ae1701a4117",
+                            "operator": "==",
+                            "value": "1"
+                        }
+                    ]
+                ],
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": "",
+                "readonly": 0,
+                "disabled": 0
+            },
+            {
+                "key": "field_55ae186d8b80a",
+                "label": "Display wp admin image logo",
+                "name": "gg_display_admin_image_logo",
+                "type": "true_false",
+                "instructions": "Display a custom image\/logo on the wp admin login area.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "message": "",
+                "default_value": 0
+            },
+            {
+                "key": "field_55ae18d28b80b",
+                "label": "WP admin logo image",
+                "name": "gg_admin_logo_image",
+                "type": "image",
+                "instructions": "Upload the logo image",
+                "required": 0,
+                "conditional_logic": [
+                    [
+                        {
+                            "field": "field_55ae186d8b80a",
+                            "operator": "==",
+                            "value": "1"
+                        }
+                    ]
+                ],
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "return_format": "array",
+                "preview_size": "full",
+                "library": "all",
+                "min_width": "",
+                "min_height": "",
+                "min_size": "",
+                "max_width": "",
+                "max_height": "",
+                "max_size": "",
+                "mime_types": ""
+            },
+            {
+                "key": "field_55ae1b98bd910",
+                "label": "Display footer image logo",
+                "name": "gg_display_footer_image_logo",
+                "type": "true_false",
+                "instructions": "Display an image logo in the footer",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "message": "",
+                "default_value": 0
+            },
+            {
+                "key": "field_55ae1bbfbd911",
+                "label": "Footer logo image",
+                "name": "gg_footer_logo_image",
+                "type": "image",
+                "instructions": "Upload the logo image",
+                "required": 0,
+                "conditional_logic": [
+                    [
+                        {
+                            "field": "field_55ae1b98bd910",
+                            "operator": "==",
+                            "value": "1"
+                        }
+                    ]
+                ],
+                "wrapper": {
+                    "width": 50,
+                    "class": "",
+                    "id": ""
+                },
+                "return_format": "array",
+                "preview_size": "full",
+                "library": "all",
+                "min_width": "",
+                "min_height": "",
+                "min_size": "",
+                "max_width": "",
+                "max_height": "",
+                "max_size": "",
+                "mime_types": ""
+            },
+            {
+                "key": "field_55ae1c29bd912",
+                "label": "Footer logo image retina",
+                "name": "gg_footer_logo_image_retina",
+                "type": "image",
+                "instructions": "Upload the retina version of the logo.",
+                "required": 0,
+                "conditional_logic": [
+                    [
+                        {
+                            "field": "field_55ae1b98bd910",
+                            "operator": "==",
+                            "value": "1"
+                        }
+                    ]
+                ],
+                "wrapper": {
+                    "width": 50,
+                    "class": "",
+                    "id": ""
+                },
+                "return_format": "array",
+                "preview_size": "thumbnail",
+                "library": "all",
+                "min_width": "",
+                "min_height": "",
+                "min_size": "",
+                "max_width": "",
+                "max_height": "",
+                "max_size": "",
+                "mime_types": ""
+            },
+            {
+                "key": "field_55ae1c7dbd915",
+                "label": "Footer logo margins",
+                "name": "gg_footer_logo_margins",
+                "type": "text",
+                "instructions": "Insert the logo margins, if necessary. Eg: 5px 0 0 2px",
+                "required": 0,
+                "conditional_logic": [
+                    [
+                        {
+                            "field": "field_55ae1b98bd910",
+                            "operator": "==",
+                            "value": "1"
+                        }
+                    ]
+                ],
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": "",
+                "readonly": 0,
+                "disabled": 0
+            },
+            {
+                "key": "field_55ae1cafbd916",
+                "label": "Display favicon",
+                "name": "gg_display_favicon",
+                "type": "true_false",
+                "instructions": "Display an favicon",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "message": "",
+                "default_value": 0
+            },
+            {
+                "key": "field_55ae1cc9bd917",
+                "label": "Favicon image",
+                "name": "gg_favicon_image",
+                "type": "image",
+                "instructions": "Upload the favicon image",
+                "required": 0,
+                "conditional_logic": [
+                    [
+                        {
+                            "field": "field_55ae1cafbd916",
+                            "operator": "==",
+                            "value": "1"
+                        }
+                    ]
+                ],
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "return_format": "url",
+                "preview_size": "thumbnail",
+                "library": "all",
+                "min_width": "",
+                "min_height": "",
+                "min_size": "",
+                "max_width": "",
+                "max_height": "",
+                "max_size": "",
+                "mime_types": ""
+            },
+            {
+                "key": "field_55d2f94807166",
+                "label": "Display tagline",
+                "name": "gg_display_tagline",
+                "type": "true_false",
+                "instructions": "Display the tagline. You can set\/change it in Settings >> General.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "message": "",
+                "default_value": 0
+            },
+            {
+                "key": "field_55ae1d5d599aa",
+                "label": "Header",
+                "name": "",
+                "type": "tab",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "placement": "top",
+                "endpoint": 0
+            },
+            {
+                "key": "field_5608f53a557d7",
+                "label": "Sticky menu",
+                "name": "gg_sticky_menu",
+                "type": "true_false",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "message": "",
+                "default_value": 0
+            },
+            {
+                "key": "field_55ae4ef1ce976",
+                "label": "Menu design",
+                "name": "gg_menu_design",
+                "type": "select",
+                "instructions": "Select the menu design",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "choices": {
+                    "light": "Light",
+                    "dark": "Dark"
+                },
+                "default_value": {
+                    "light": "light"
+                },
+                "allow_null": 0,
+                "multiple": 0,
+                "ui": 0,
+                "ajax": 0,
+                "placeholder": "",
+                "disabled": 0,
+                "readonly": 0
+            },
+            {
+                "key": "field_5608f4ab557d6",
+                "label": "Menu style",
+                "name": "gg_menu_style",
+                "type": "select",
+                "instructions": "Select the menu style",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "choices": {
+                    "style_1": "With logo on the left side",
+                    "style_2": "With logo in the center"
+                },
+                "default_value": {
+                    "style_1": "style_1"
+                },
+                "allow_null": 0,
+                "multiple": 0,
+                "ui": 0,
+                "ajax": 0,
+                "placeholder": "",
+                "disabled": 0,
+                "readonly": 0
+            },
+            {
+                "key": "field_5608f420557d5",
+                "label": "Menu width",
+                "name": "gg_menu_width",
+                "type": "select",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "choices": {
+                    "fullwidth": "Fullwidth",
+                    "boxed": "Boxed"
+                },
+                "default_value": {
+                    "fullwidth": "fullwidth"
+                },
+                "allow_null": 0,
+                "multiple": 0,
+                "ui": 0,
+                "ajax": 0,
+                "placeholder": "",
+                "disabled": 0,
+                "readonly": 0
+            },
+            {
+                "key": "field_55ae23940e41e",
+                "label": "Footer",
+                "name": "",
+                "type": "tab",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "placement": "top",
+                "endpoint": 0
+            },
+            {
+                "key": "field_56e02eac8db04",
+                "label": "Footer image",
+                "name": "gg_footer_image",
+                "type": "image",
+                "instructions": "Insert a footer image.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "return_format": "array",
+                "preview_size": "thumbnail",
+                "library": "all",
+                "min_width": "",
+                "min_height": "",
+                "min_size": "",
+                "max_width": "",
+                "max_height": "",
+                "max_size": "",
+                "mime_types": ""
+            },
+            {
+                "key": "field_56e02ed48db05",
+                "label": "Footer text",
+                "name": "gg_footer_text",
+                "type": "textarea",
+                "instructions": "Insert the footer text",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "maxlength": "",
+                "rows": "",
+                "new_lines": "",
+                "readonly": 0,
+                "disabled": 0
+            },
+            {
+                "key": "field_55ae511944ef9",
+                "label": "Footer widgets",
+                "name": "gg_footer_widgets",
+                "type": "true_false",
+                "instructions": "Enable\/Disable footer widgets",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "message": "",
+                "default_value": 1
+            },
+            {
+                "key": "field_55ae239f0e41f",
+                "label": "Footer extras",
+                "name": "gg_footer_extras",
+                "type": "true_false",
+                "instructions": "Enable\/Disable footer extras (copyright).",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "message": "",
+                "default_value": 1
+            },
+            {
+                "key": "field_55ae23e30e420",
+                "label": "Footer Copyright",
+                "name": "gg_footer_extras_copyright",
+                "type": "textarea",
+                "instructions": "Footer copyright",
+                "required": 0,
+                "conditional_logic": [
+                    [
+                        {
+                            "field": "field_55ae239f0e41f",
+                            "operator": "==",
+                            "value": "1"
+                        }
+                    ]
+                ],
+                "wrapper": {
+                    "width": 33,
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "&copy; 2015 Reverse",
+                "placeholder": "",
+                "maxlength": "",
+                "rows": 2,
+                "new_lines": "br",
+                "readonly": 0,
+                "disabled": 0
+            },
+            {
+                "key": "field_56e02ab38bfa4",
+                "label": "Footer menu",
+                "name": "gg_footer_extras_menu",
+                "type": "true_false",
+                "instructions": "Enable\/disable footer menu",
+                "required": 0,
+                "conditional_logic": [
+                    [
+                        {
+                            "field": "field_55ae239f0e41f",
+                            "operator": "==",
+                            "value": "1"
+                        }
+                    ]
+                ],
+                "wrapper": {
+                    "width": 33,
+                    "class": "",
+                    "id": ""
+                },
+                "message": "",
+                "default_value": 1
+            },
+            {
+                "key": "field_56e02b2484692",
+                "label": "Footer social icons",
+                "name": "gg_footer_extras_social",
+                "type": "true_false",
+                "instructions": "Enable\/disable footer social icons",
+                "required": 0,
+                "conditional_logic": [
+                    [
+                        {
+                            "field": "field_55ae239f0e41f",
+                            "operator": "==",
+                            "value": "1"
+                        }
+                    ]
+                ],
+                "wrapper": {
+                    "width": 33,
+                    "class": "",
+                    "id": ""
+                },
+                "message": "",
+                "default_value": 1
+            },
+            {
+                "key": "field_55ae24280e421",
+                "label": "Comments",
+                "name": "",
+                "type": "tab",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "placement": "top",
+                "endpoint": 0
+            },
+            {
+                "key": "field_55ae24370e422",
+                "label": "Page comments",
+                "name": "gg_page_comments",
+                "type": "true_false",
+                "instructions": "Enable\/Disable comments on all pages.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "message": "",
+                "default_value": 1
+            },
+            {
+                "key": "field_55ae24590e423",
+                "label": "Post comments",
+                "name": "gg_post_comments",
+                "type": "true_false",
+                "instructions": "Enable\/Disable comments on all posts.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "message": "",
+                "default_value": 1
+            },
+            {
+                "key": "field_55ae253671016",
+                "label": "Social media",
+                "name": "",
+                "type": "tab",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "placement": "top",
+                "endpoint": 0
+            },
+            {
+                "key": "field_55ae2ea138e91",
+                "label": "Social icons",
+                "name": "gg_social_icons",
+                "type": "repeater",
+                "instructions": "These icons are displayed with the help of \"Social Icons Widget\"",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "min": "",
+                "max": "",
+                "layout": "table",
+                "button_label": "Add Row",
+                "collapsed": "",
+                "sub_fields": [
+                    {
+                        "key": "field_55ae2eb438e92",
+                        "label": "Name",
+                        "name": "gg_social_icon_name",
+                        "type": "text",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": "",
+                        "readonly": 0,
+                        "disabled": 0
+                    },
+                    {
+                        "key": "field_55ae2ed038e93",
+                        "label": "Icon",
+                        "name": "gg_select_social_icon",
+                        "type": "select",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "choices": {
+                            "fa fa-adn": "App.net",
+                            "fa fa-android": "Android",
+                            "fa fa-angellist": "AngelList",
+                            "fa fa-apple": "Apple",
+                            "fa fa-behance": "Behance",
+                            "fa fa-behance-square": "Behance Square",
+                            "fa fa-bitbucket": "Bitbucket",
+                            "fa fa-bitbucket-square": "Bitbucket Square",
+                            "fa fa-btc": "Bitcoin (BTC)",
+                            "fa fa-cc-amex": "American Express Credit Card",
+                            "fa fa-cc-discover": "Discover Credit Card",
+                            "fa fa-cc-mastercard": "MasterCard Credit Card",
+                            "fa fa-cc-paypal": "Paypal Credit Card",
+                            "fa fa-cc-stripe": "Stripe Credit Card",
+                            "fa fa-cc-visa": "Visa Credit Card",
+                            "fa fa-codepen": "Codepen",
+                            "fa fa-css3": "CSS 3 Logo",
+                            "fa fa-delicious": "Delicious Logo",
+                            "fa fa-deviantart": "deviantART",
+                            "fa fa-digg": "Digg Logo",
+                            "fa fa-dribbble": "Dribbble",
+                            "fa fa-dropbox": "Dropbox",
+                            "fa fa-drupal": "Drupal Logo",
+                            "fa fa-empire": "Galactic Empire",
+                            "fa fa-facebook": "Facebook",
+                            "fa fa-facebook-square": "Facebook Square",
+                            "fa fa-flickr": "Flickr",
+                            "fa fa-foursquare": "Foursquare",
+                            "fa fa-git": "Git",
+                            "fa fa-git-square": "Git Square",
+                            "fa fa-github": "GitHub",
+                            "fa fa-github-alt": "GitHub Alt",
+                            "fa fa-github-square": "GitHub Square",
+                            "fa fa-gittip": "Gittip",
+                            "fa fa-google": "Google Logo",
+                            "fa fa-google-plus": "Google Plus",
+                            "fa fa-google-plus-square": "Google Plus Square",
+                            "fa fa-google-wallet": "Goole Wallet",
+                            "fa fa-hacker-news": "Hacker News",
+                            "fa fa-html5": "HTML 5 Logo",
+                            "fa fa-instagram": "Instagram",
+                            "fa fa-ioxhost": "ioxhost",
+                            "fa fa-joomla": "Joomla Logo",
+                            "fa fa-jsfiddle": "jsFiddle",
+                            "fa fa-lastfm": "last.fm",
+                            "fa fa-lastfm-square": "last.fm Square",
+                            "fa fa-linkedin": "LinkedIn",
+                            "fa fa-linkedin-square": "LinkedIn Square",
+                            "fa fa-linux": "Linux",
+                            "fa fa-maxcdn": "MaxCDN",
+                            "fa fa-meanpath": "meanpath",
+                            "fa fa-openid": "OpenID",
+                            "fa fa-pagelines": "Pagelines",
+                            "fa fa-paypal": "Paypal",
+                            "fa fa-pied-piper": "Pied Piper Logo",
+                            "fa fa-pied-piper-alt": "Pied Piper Alternate Logo",
+                            "fa fa-pinterest": "Pinterest",
+                            "fa fa-pinterest-square": "Pinterest Square",
+                            "fa fa-qq": "QQ",
+                            "fa fa-rebel": "Rebel Alliance",
+                            "fa fa-reddit": "reddit Logo",
+                            "fa fa-reddit-square": "reddit Square",
+                            "fa fa-renren": "Renren",
+                            "fa fa-share-alt": "Share Alt",
+                            "fa fa-share-alt-square": "Share Alt Square",
+                            "fa fa-skype": "Skype",
+                            "fa fa-slack": "Slack Logo",
+                            "fa fa-slideshare": "Slideshare",
+                            "fa fa-soundcloud": "SoundCloud",
+                            "fa fa-spotify": "Spotify",
+                            "fa fa-stack-exchange": "Stack Exchange",
+                            "fa fa-stack-overflow": "Stack Overflow",
+                            "fa fa-steam": "Steam",
+                            "fa fa-steam-square": "Steam Square",
+                            "fa fa-stumbleupon": "StumbleUpon Logo",
+                            "fa fa-stumbleupon-circle": "StumbleUpon Circle",
+                            "fa fa-tencent-weibo": "Tencent Weibo",
+                            "fa fa-trello": "Trello",
+                            "fa fa-tumblr": "Tumblr",
+                            "fa fa-tumblr-square": "Tumblr Square",
+                            "fa fa-twitch": "Twitch",
+                            "fa fa-twitter": "Twitter",
+                            "fa fa-twitter-square": "Twitter Square",
+                            "fa fa-vimeo-square": "Vimeo Square",
+                            "fa fa-vine": "Vine",
+                            "fa fa-vk": "VK",
+                            "fa fa-weibo": "Weibo",
+                            "fa fa-weixin": "Weixin (WeChat)",
+                            "fa fa-windows": "Windows",
+                            "fa fa-wordpress": "Wordpress Logo",
+                            "fa fa-xing": "Xing",
+                            "fa fa-xing-square": "Xing Square",
+                            "fa fa-yahoo": "Yahoo Logo",
+                            "fa fa-yelp": "Yelp",
+                            "fa fa-youtube": "YouTube",
+                            "fa fa-youtube-play": "YouTube Play",
+                            "fa fa-youtube-square": "YouTube Square"
+                        },
+                        "default_value": {
+                            "": ""
+                        },
+                        "allow_null": 0,
+                        "multiple": 0,
+                        "ui": 0,
+                        "ajax": 0,
+                        "placeholder": "",
+                        "disabled": 0,
+                        "readonly": 0
+                    },
+                    {
+                        "key": "field_55ae2ee638e94",
+                        "label": "Link",
+                        "name": "gg_social_icon_link",
+                        "type": "url",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "placeholder": ""
+                    }
+                ]
+            },
+            {
+                "key": "field_55ae13a120209",
+                "label": "Sidebars",
+                "name": "",
+                "type": "tab",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "placement": "top",
+                "endpoint": 0
+            },
+            {
+                "key": "field_5596604147ece",
+                "label": "Sidebar options",
+                "name": "gg_sidebars",
+                "type": "repeater",
+                "instructions": "Create a custom sidebar to use on pages or posts. Then go to Appearance >> Widgets to add widgets.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "min": "",
+                "max": "",
+                "layout": "row",
+                "button_label": "Add Sidebar",
+                "collapsed": "",
+                "sub_fields": [
+                    {
+                        "key": "field_5596607347ecf",
+                        "label": "Sidebar name",
+                        "name": "gg_sidebar_name",
+                        "type": "text",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": "",
+                        "readonly": 0,
+                        "disabled": 0
+                    }
+                ]
+            },
+            {
+                "key": "field_55ae256271017",
+                "label": "Fonts",
+                "name": "",
+                "type": "tab",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "placement": "top",
+                "endpoint": 1
+            },
+            {
+                "key": "field_55ae488439030",
+                "label": "Headings font",
+                "name": "gg_headings_font",
+                "type": "google_font_selector",
+                "instructions": "Select the theme font. Default: Oswald",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "include_web_safe_fonts": 1,
+                "enqueue_font": 1,
+                "default_font": "Playfair Display"
+            },
+            {
+                "key": "field_55d2f67f05559",
+                "label": "Body font",
+                "name": "gg_body_font",
+                "type": "google_font_selector",
+                "instructions": "Select the theme font. Default: Lato",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "include_web_safe_fonts": 1,
+                "enqueue_font": 1,
+                "default_font": "Lato"
+            },
+            {
+                "key": "field_55ae25eb2fbac",
+                "label": "Colors",
+                "name": "",
+                "type": "tab",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "placement": "top",
+                "endpoint": 0
+            },
+            {
+                "key": "field_55b0e470292f2",
+                "label": "Text colors",
+                "name": "",
+                "type": "message",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "message": "Modify the default text colors",
+                "esc_html": 0,
+                "new_lines": "wpautop"
+            },
+            {
+                "key": "field_55b0e601907ba",
+                "label": "Text body color",
+                "name": "gg_text_body_color",
+                "type": "color_picker",
+                "instructions": "Default value: #ababab",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": 33,
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "#ababab"
+            },
+            {
+                "key": "field_55b0e65d11068",
+                "label": "Headings color",
+                "name": "gg_headings_color",
+                "type": "color_picker",
+                "instructions": "Default value: #000000",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": 33,
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "#000000"
+            },
+            {
+                "key": "field_55b0e72311069",
+                "label": "Link and elements color",
+                "name": "gg_link_color",
+                "type": "color_picker",
+                "instructions": "Default value: #000000",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": 33,
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "#000000"
+            },
+            {
+                "key": "field_55b0e5e3907b9",
+                "label": "Elements color",
+                "name": "",
+                "type": "message",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "message": "Modify the default elements color. \r\nAffects: elements with background color, like footer, badges, dark menu, fullscreen search",
+                "new_lines": "wpautop",
+                "esc_html": 0
+            },
+            {
+                "key": "field_55b0f17e116ef",
+                "label": "Primary color",
+                "name": "gg_primary_color",
+                "type": "color_picker",
+                "instructions": "Default value: #000000\r\n",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "#000000"
+            },
+            {
+                "key": "field_55ae258271018",
+                "label": "Page templates",
+                "name": "",
+                "type": "tab",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "placement": "top",
+                "endpoint": 0
+            },
+            {
+                "key": "field_55b12f77bbf75",
+                "label": "Search page",
+                "name": "",
+                "type": "message",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "message": "Select the layout of the search page.",
+                "esc_html": 0,
+                "new_lines": "wpautop"
+            },
+            {
+                "key": "field_55b12f90bbf76",
+                "label": "Search page layout",
+                "name": "gg_search_page_layout",
+                "type": "select",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "choices": {
+                    "with_left_sidebar": "With left sidebar",
+                    "with_right_sidebar": "With right sidebar",
+                    "no_sidebar": "No sidebar"
+                },
+                "default_value": {
+                    "with_left_sidebar": "with_left_sidebar"
+                },
+                "allow_null": 0,
+                "multiple": 0,
+                "ui": 0,
+                "ajax": 0,
+                "placeholder": "",
+                "disabled": 0,
+                "readonly": 0
+            },
+            {
+                "key": "field_55b1fc9e637e3",
+                "label": "404 page",
+                "name": "",
+                "type": "message",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "message": "Set the options for the 404 error page.",
+                "esc_html": 0,
+                "new_lines": "wpautop"
+            },
+            {
+                "key": "field_55b1fcba637e4",
+                "label": "Error page title",
+                "name": "gg_error_page_title",
+                "type": "text",
+                "instructions": "Set the page title",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "404 Error",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": "",
+                "readonly": 0,
+                "disabled": 0
+            },
+            {
+                "key": "field_55b1fcf2637e5",
+                "label": "Error page description",
+                "name": "gg_error_page_description",
+                "type": "textarea",
+                "instructions": "Set a message",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "It seems we can't find what you're looking for. Perhaps searching can help.",
+                "placeholder": "",
+                "maxlength": "",
+                "rows": "",
+                "new_lines": "",
+                "readonly": 0,
+                "disabled": 0
+            },
+            {
+                "key": "field_55b1fe58f8dee",
+                "label": "Category\/Archive page",
+                "name": "",
+                "type": "message",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "message": "Select the layout of the posts category\/archive page.",
+                "esc_html": 0,
+                "new_lines": "wpautop"
+            },
+            {
+                "key": "field_55b1fe77f8def",
+                "label": "Page layout",
+                "name": "gg_cat_page_layout",
+                "type": "select",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "choices": {
+                    "with_left_sidebar": "With left sidebar",
+                    "with_right_sidebar": "With right sidebar",
+                    "no_sidebar": "No sidebar"
+                },
+                "default_value": {
+                    "with_left_sidebar": "with_left_sidebar"
+                },
+                "allow_null": 0,
+                "multiple": 0,
+                "ui": 0,
+                "ajax": 0,
+                "placeholder": "",
+                "disabled": 0,
+                "readonly": 0
+            },
+            {
+                "key": "field_55b230be9081f",
+                "label": "Gallery archive page",
+                "name": "",
+                "type": "message",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "message": "",
+                "esc_html": 0,
+                "new_lines": "wpautop"
+            },
+            {
+                "key": "field_55b230ce90820",
+                "label": "Page layout",
+                "name": "gg_gallery_page_layout",
+                "type": "select",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "choices": {
+                    "with_left_sidebar": "With left sidebar",
+                    "with_right_sidebar": "With right sidebar",
+                    "no_sidebar": "No sidebar"
+                },
+                "default_value": {
+                    "no_sidebar": "no_sidebar"
+                },
+                "allow_null": 0,
+                "multiple": 0,
+                "ui": 0,
+                "ajax": 0,
+                "placeholder": "",
+                "disabled": 0,
+                "readonly": 0
+            },
+            {
+                "key": "field_55ae234a0e41c",
+                "label": "Custom CSS",
+                "name": "",
+                "type": "tab",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "placement": "top",
+                "endpoint": 0
+            },
+            {
+                "key": "field_55ae23560e41d",
+                "label": "CSS",
+                "name": "gg_css",
+                "type": "textarea",
+                "instructions": "Your custom CSS goes here. Do not include the style tag. This is already done for you.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "maxlength": "",
+                "rows": "",
+                "new_lines": "",
+                "readonly": 0,
+                "disabled": 0
+            },
+            {
+                "key": "field_55ae22d40e41a",
+                "label": "Custom scripts",
+                "name": "",
+                "type": "tab",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "placement": "top",
+                "endpoint": 0
+            },
+            {
+                "key": "field_55ae22e10e41b",
+                "label": "JS",
+                "name": "gg_script",
+                "type": "textarea",
+                "instructions": "Add custom footer scripts such as Google Analytics. Do not include the script tag. This is already done for you.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "maxlength": "",
+                "rows": "",
+                "new_lines": "",
+                "readonly": 0,
+                "disabled": 0
+            },
+            {
+                "key": "field_56138d8a5c1d8",
+                "label": "Store",
+                "name": "",
+                "type": "tab",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "placement": "top",
+                "endpoint": 0
+            },
+            {
+                "key": "field_5613a477e58af",
+                "label": "Header minicart",
+                "name": "gg_header_minicart",
+                "type": "true_false",
+                "instructions": "Enable\/disable header minicart",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": 50,
+                    "class": "",
+                    "id": ""
+                },
+                "message": "",
+                "default_value": 1
+            },
+            {
+                "key": "field_56138d965c1d9",
+                "label": "Catalog mode",
+                "name": "gg_store_catalog_mode",
+                "type": "true_false",
+                "instructions": "Enable\/Disable catalog mode. This will disable: add to cart, checkout and buy functions.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": 50,
+                    "class": "",
+                    "id": ""
+                },
+                "message": "",
+                "default_value": 0
+            },
+            {
+                "key": "field_56ab62e3bf028",
+                "label": "Activate product image sizes",
+                "name": "gg_activate_product_image_sizes",
+                "type": "true_false",
+                "instructions": "Check this to activate the inputs for image size change from WooCommerce >> Settings >> Products >> Display",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "message": "",
+                "default_value": 0
+            },
+            {
+                "key": "field_56138df55c1da",
+                "label": "Shop page options",
+                "name": "shop_page_options",
+                "type": "message",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "message": "Shop page options",
+                "new_lines": "",
+                "esc_html": 0
+            },
+            {
+                "key": "field_56138f1c5c1db",
+                "label": "Shop columns",
+                "name": "gg_shop_product_columns",
+                "type": "select",
+                "instructions": "Select the shop page number of columns",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": 50,
+                    "class": "",
+                    "id": ""
+                },
+                "choices": {
+                    "2": 2,
+                    "3": 3,
+                    "4": 4
+                },
+                "default_value": {
+                    "3": 3
+                },
+                "allow_null": 0,
+                "multiple": 0,
+                "ui": 0,
+                "ajax": 0,
+                "placeholder": "",
+                "disabled": 0,
+                "readonly": 0
+            },
+            {
+                "key": "field_56f4f86445bf8",
+                "label": "Shop style",
+                "name": "gg_shop_product_style",
+                "type": "select",
+                "instructions": "Select the shop style",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": 50,
+                    "class": "",
+                    "id": ""
+                },
+                "choices": {
+                    "style1": "Style 1",
+                    "style2": "Style 2",
+                    "style3": "Style 3",
+                    "style4": "Style 4"
+                },
+                "default_value": {
+                    "style1": "Style 1"
+                },
+                "allow_null": 0,
+                "multiple": 0,
+                "ui": 0,
+                "ajax": 0,
+                "placeholder": "",
+                "disabled": 0,
+                "readonly": 0
+            },
+            {
+                "key": "field_56138f535c1dc",
+                "label": "Products per page",
+                "name": "gg_product_per_page",
+                "type": "text",
+                "instructions": "Insert the number of products to display until pagination kicks is",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": 50,
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": 12,
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": "",
+                "readonly": 0,
+                "disabled": 0
+            },
+            {
+                "key": "field_5613901b5c1dd",
+                "label": "Products sale flash",
+                "name": "gg_store_sale_flash",
+                "type": "true_false",
+                "instructions": "Enable\/Disable sale flash on products.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": 33,
+                    "class": "",
+                    "id": ""
+                },
+                "message": "",
+                "default_value": 1
+            },
+            {
+                "key": "field_561390b438a60",
+                "label": "Products price",
+                "name": "gg_store_products_price",
+                "type": "true_false",
+                "instructions": "Enable\/Disable products price.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": 33,
+                    "class": "",
+                    "id": ""
+                },
+                "message": "",
+                "default_value": 1
+            },
+            {
+                "key": "field_5613910138a61",
+                "label": "Add to cart button",
+                "name": "gg_store_add_to_cart",
+                "type": "true_false",
+                "instructions": "Enable\/Disable add to cart button",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": 33,
+                    "class": "",
+                    "id": ""
+                },
+                "message": "",
+                "default_value": 1
+            },
+            {
+                "key": "field_5613914738a62",
+                "label": "Product page options",
+                "name": "product_page_options",
+                "type": "message",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "message": "Product page options",
+                "new_lines": "",
+                "esc_html": 0
+            },
+            {
+                "key": "field_56164062a9130",
+                "label": "Product image zoom",
+                "name": "gg_product_image_zoom",
+                "type": "true_false",
+                "instructions": "Enable\/disable the zoom feature on product",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "message": "",
+                "default_value": 1
+            },
+            {
+                "key": "field_5613916938a63",
+                "label": "Product sale flash",
+                "name": "gg_product_sale_flash",
+                "type": "true_false",
+                "instructions": "Enable\/Disable sale flash on product",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": 33,
+                    "class": "",
+                    "id": ""
+                },
+                "message": "",
+                "default_value": 1
+            },
+            {
+                "key": "field_561391a238a64",
+                "label": "Product price",
+                "name": "gg_product_products_price",
+                "type": "true_false",
+                "instructions": "Enable\/Disable product price",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": 33,
+                    "class": "",
+                    "id": ""
+                },
+                "message": "",
+                "default_value": 1
+            },
+            {
+                "key": "field_561391d138a65",
+                "label": "Product short description",
+                "name": "gg_product_products_excerpt",
+                "type": "true_false",
+                "instructions": "Enable\/Disable product short description",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": 33,
+                    "class": "",
+                    "id": ""
+                },
+                "message": "",
+                "default_value": 1
+            },
+            {
+                "key": "field_5613920038a66",
+                "label": "Product meta",
+                "name": "gg_product_products_meta",
+                "type": "true_false",
+                "instructions": "Enable\/Disable product meta (sku, category, tag)",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": 33,
+                    "class": "",
+                    "id": ""
+                },
+                "message": "",
+                "default_value": 1
+            },
+            {
+                "key": "field_5613922d38a67",
+                "label": "Product add to cart button",
+                "name": "gg_product_add_to_cart",
+                "type": "true_false",
+                "instructions": "Enable\/Disable product add to cart button",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": 33,
+                    "class": "",
+                    "id": ""
+                },
+                "message": "",
+                "default_value": 1
+            },
+            {
+                "key": "field_561634d4bbf81",
+                "label": "Product size guide",
+                "name": "gg_product_size_guide",
+                "type": "true_false",
+                "instructions": "Enable\/Disable product size guide",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": 33,
+                    "class": "",
+                    "id": ""
+                },
+                "message": "",
+                "default_value": 1
+            },
+            {
+                "key": "field_5616357716efb",
+                "label": "Product wishlist",
+                "name": "gg_product_wishlist",
+                "type": "true_false",
+                "instructions": "Enable\/Disable product wishlist",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": 33,
+                    "class": "",
+                    "id": ""
+                },
+                "message": "",
+                "default_value": 1
+            },
+            {
+                "key": "field_5613925238a68",
+                "label": "Related products",
+                "name": "gg_product_related_products",
+                "type": "true_false",
+                "instructions": "Enable\/Disable Related products",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": 33,
+                    "class": "",
+                    "id": ""
+                },
+                "message": "",
+                "default_value": 1
+            },
+            {
+                "key": "field_5613927438a69",
+                "label": "Up Sells products",
+                "name": "gg_product_upsells_products",
+                "type": "true_false",
+                "instructions": "Enable\/Disable Up Sells products",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": 33,
+                    "class": "",
+                    "id": ""
+                },
+                "message": "",
+                "default_value": 1
+            },
+            {
+                "key": "field_5613929938a6a",
+                "label": "Reviews tab",
+                "name": "gg_product_reviews_tab",
+                "type": "true_false",
+                "instructions": "Enable\/Disable reviews tab",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": 33,
+                    "class": "",
+                    "id": ""
+                },
+                "message": "",
+                "default_value": 1
+            },
+            {
+                "key": "field_561392b938a6b",
+                "label": "Description tab",
+                "name": "gg_product_description_tab",
+                "type": "true_false",
+                "instructions": "Enable\/Disable description tab",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": 33,
+                    "class": "",
+                    "id": ""
+                },
+                "message": "",
+                "default_value": 1
+            },
+            {
+                "key": "field_561392e538a6c",
+                "label": "Additional information tab",
+                "name": "gg_product_attributes_tab",
+                "type": "true_false",
+                "instructions": "Enable\/Disable additional information tab",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": 33,
+                    "class": "",
+                    "id": ""
+                },
+                "message": "",
+                "default_value": 1
+            },
+            {
+                "key": "field_5613930338a6d",
+                "label": "Cart page options",
+                "name": "",
+                "type": "message",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "message": "Cart page options",
+                "new_lines": "",
+                "esc_html": 0
+            },
+            {
+                "key": "field_5613931c38a6e",
+                "label": "Cross Sells products",
+                "name": "gg_product_crosssells_products",
+                "type": "true_false",
+                "instructions": "Enable\/Disable Cross Sells products",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "message": "",
+                "default_value": 1
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "options_page",
+                    "operator": "==",
+                    "value": "theme-options"
+                }
+            ]
+        ],
+        "menu_order": 0,
+        "position": "normal",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": "",
+        "active": 1,
+        "description": ""
+    },
+    {
+        "key": "group_546ef5e7380c4",
+        "title": "Blog Options",
+        "fields": [
+            {
+                "key": "field_546ef5ea14c14",
+                "label": "Blog layout",
+                "name": "gg_blog_layout",
+                "type": "select",
+                "instructions": "Select the blog layout",
+                "required": 1,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "choices": {
+                    "fitRows": "Grid Fit rows",
+                    "masonry": "Grid Masonry"
+                },
+                "default_value": {
+                    "fitRows": "fitRows"
+                },
+                "allow_null": 0,
+                "multiple": 0,
+                "ui": 0,
+                "ajax": 0,
+                "placeholder": "",
+                "disabled": 0,
+                "readonly": 0
+            },
+            {
+                "key": "field_546f0a785014f",
+                "label": "Blog layout style",
+                "name": "gg_blog_layout_style",
+                "type": "select",
+                "instructions": "Select the blog layout style",
+                "required": 1,
+                "conditional_logic": [
+                    [
+                        {
+                            "field": "field_546ef5ea14c14",
+                            "operator": "==",
+                            "value": "masonry"
+                        }
+                    ],
+                    [
+                        {
+                            "field": "field_546ef5ea14c14",
+                            "operator": "==",
+                            "value": "fitRows"
+                        }
+                    ]
+                ],
+                "wrapper": {
+                    "width": 50,
+                    "class": "",
+                    "id": ""
+                },
+                "choices": {
+                    "gap": "Gap",
+                    "nogap": "No Gap"
+                },
+                "default_value": {
+                    "gap": "gap"
+                },
+                "allow_null": 0,
+                "multiple": 0,
+                "ui": 0,
+                "ajax": 0,
+                "placeholder": "",
+                "disabled": 0,
+                "readonly": 0
+            },
+            {
+                "key": "field_546f0aff3a532",
+                "label": "Blog columns",
+                "name": "gg_blog_columns",
+                "type": "select",
+                "instructions": "Select the number of columns",
+                "required": 1,
+                "conditional_logic": [
+                    [
+                        {
+                            "field": "field_546ef5ea14c14",
+                            "operator": "==",
+                            "value": "fitRows"
+                        }
+                    ],
+                    [
+                        {
+                            "field": "field_546ef5ea14c14",
+                            "operator": "==",
+                            "value": "masonry"
+                        }
+                    ]
+                ],
+                "wrapper": {
+                    "width": 50,
+                    "class": "",
+                    "id": ""
+                },
+                "choices": {
+                    "1": 1,
+                    "2": 2,
+                    "3": 3
+                },
+                "default_value": [
+                    1
+                ],
+                "allow_null": 0,
+                "multiple": 0,
+                "ui": 0,
+                "ajax": 0,
+                "placeholder": "",
+                "disabled": 0,
+                "readonly": 0
+            },
+            {
+                "key": "field_54bfb061ff824",
+                "label": "Number of posts to show",
+                "name": "gg_blog_no_of_posts_to_show",
+                "type": "text",
+                "instructions": "Insert the number of blog posts to show",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": 50,
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": 5,
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": "",
+                "readonly": 0,
+                "disabled": 0
+            },
+            {
+                "key": "field_54eedbbefea3b",
+                "label": "Blog pagination",
+                "name": "gg_blog_pagination",
+                "type": "select",
+                "instructions": "Select the blog pagination",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": 50,
+                    "class": "",
+                    "id": ""
+                },
+                "choices": {
+                    "numbered": "Numbered pagination",
+                    "ajax_load": "Ajax load more pagination"
+                },
+                "default_value": {
+                    "numbered": "numbered"
+                },
+                "allow_null": 0,
+                "multiple": 0,
+                "ui": 0,
+                "ajax": 0,
+                "placeholder": "",
+                "disabled": 0,
+                "readonly": 0
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "page_type",
+                    "operator": "==",
+                    "value": "posts_page"
+                }
+            ],
+            [
+                {
+                    "param": "page_template",
+                    "operator": "==",
+                    "value": "theme-templates\/blog.php"
+                }
+            ]
+        ],
+        "menu_order": 2,
+        "position": "normal",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": "",
+        "active": 1,
+        "description": ""
+    },
+    {
+        "key": "group_54d0cd3f95809",
+        "title": "Gallery Item Options",
+        "fields": [
+            {
+                "key": "field_55912c6c067a5",
+                "label": "Gallery short description",
+                "name": "gg_gallery_short_description",
+                "type": "text",
+                "instructions": "Insert a short description",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": "",
+                "readonly": 0,
+                "disabled": 0
+            },
+            {
+                "key": "field_54d0cd7c84b5a",
+                "label": "Gallery item click",
+                "name": "gg_select_gallery_open_type",
+                "type": "select",
+                "instructions": "Select what to open when you click on the gallery item.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "choices": {
+                    "nothing": "Nothing",
+                    "lightbox_image": "An image in lightbox",
+                    "lightbox_video": "A video in lightbox",
+                    "custom_url": "A custom URL",
+                    "separate_page": "Gallery item content in an separate page"
+                },
+                "default_value": {
+                    "nothing": "nothing"
+                },
+                "allow_null": 0,
+                "multiple": 0,
+                "ui": 0,
+                "ajax": 0,
+                "placeholder": "",
+                "disabled": 0,
+                "readonly": 0
+            },
+            {
+                "key": "field_54d0ce1743340",
+                "label": "Gallery item lightbox image",
+                "name": "gg_gallery_item_lightbox_image",
+                "type": "image",
+                "instructions": "Upload the image used in lightbox.",
+                "required": 0,
+                "conditional_logic": [
+                    [
+                        {
+                            "field": "field_54d0cd7c84b5a",
+                            "operator": "==",
+                            "value": "lightbox_image"
+                        }
+                    ]
+                ],
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "return_format": "url",
+                "preview_size": "thumbnail",
+                "library": "all",
+                "min_width": "",
+                "min_height": "",
+                "min_size": "",
+                "max_width": "",
+                "max_height": "",
+                "max_size": "",
+                "mime_types": ""
+            },
+            {
+                "key": "field_54d0ce52ee3ff",
+                "label": "Gallery item lightbox video",
+                "name": "gg_gallery_item_lightbox_video",
+                "type": "text",
+                "instructions": "Insert the video link (Vimeo or Youtube)",
+                "required": 0,
+                "conditional_logic": [
+                    [
+                        {
+                            "field": "field_54d0cd7c84b5a",
+                            "operator": "==",
+                            "value": "lightbox_video"
+                        }
+                    ]
+                ],
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": "",
+                "readonly": 0,
+                "disabled": 0
+            },
+            {
+                "key": "field_54d0ce7dee400",
+                "label": "Custom URL",
+                "name": "gg_gallery_item_custom_url",
+                "type": "url",
+                "instructions": "Insert a custom URL here. The gallery item will link to this URL instead of the default one (the one that sends you to the gallery details page)",
+                "required": 0,
+                "conditional_logic": [
+                    [
+                        {
+                            "field": "field_54d0cd7c84b5a",
+                            "operator": "==",
+                            "value": "custom_url"
+                        }
+                    ]
+                ],
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": ""
+            },
+            {
+                "key": "field_54d0cea3ee401",
+                "label": "Gallery images",
+                "name": "gg_gallery_images",
+                "type": "gallery",
+                "instructions": "Upload the images used gallery item page.",
+                "required": 0,
+                "conditional_logic": [
+                    [
+                        {
+                            "field": "field_54d0cd7c84b5a",
+                            "operator": "==",
+                            "value": "separate_page"
+                        }
+                    ]
+                ],
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "min": "",
+                "max": "",
+                "preview_size": "thumbnail",
+                "library": "all",
+                "min_width": "",
+                "min_height": "",
+                "min_size": "",
+                "max_width": "",
+                "max_height": "",
+                "max_size": "",
+                "mime_types": ""
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "post_type",
+                    "operator": "==",
+                    "value": "gallery_cpt"
+                }
+            ]
+        ],
+        "menu_order": 2,
+        "position": "normal",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": "",
+        "active": 1,
+        "description": ""
+    },
+    {
+        "key": "group_54d0bbff402a5",
+        "title": "Gallery Options",
+        "fields": [
+            {
+                "key": "field_54d0bbff52a4c",
+                "label": "Gallery layout",
+                "name": "gg_gallery_layout",
+                "type": "select",
+                "instructions": "Select the gallery layout",
+                "required": 1,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": 50,
+                    "class": "",
+                    "id": ""
+                },
+                "choices": {
+                    "fitRows": "Grid Fit rows",
+                    "masonry": "Grid Masonry",
+                    "carousel": "Carousel style"
+                },
+                "default_value": {
+                    "masonry": "masonry"
+                },
+                "allow_null": 0,
+                "multiple": 0,
+                "ui": 0,
+                "ajax": 0,
+                "placeholder": "",
+                "disabled": 0,
+                "readonly": 0
+            },
+            {
+                "key": "field_54d0bbff53629",
+                "label": "Gallery layout style",
+                "name": "gg_gallery_layout_style",
+                "type": "select",
+                "instructions": "Select the gallery layout style",
+                "required": 1,
+                "conditional_logic": [
+                    [
+                        {
+                            "field": "field_54d0bbff52a4c",
+                            "operator": "==",
+                            "value": "fitRows"
+                        }
+                    ],
+                    [
+                        {
+                            "field": "field_54d0bbff52a4c",
+                            "operator": "==",
+                            "value": "masonry"
+                        }
+                    ]
+                ],
+                "wrapper": {
+                    "width": 50,
+                    "class": "",
+                    "id": ""
+                },
+                "choices": {
+                    "gap": "Gap",
+                    "nogap": "No Gap"
+                },
+                "default_value": {
+                    "gap": "gap"
+                },
+                "allow_null": 0,
+                "multiple": 0,
+                "ui": 0,
+                "ajax": 0,
+                "placeholder": "",
+                "disabled": 0,
+                "readonly": 0
+            },
+            {
+                "key": "field_54d0bbff539ed",
+                "label": "Gallery columns",
+                "name": "gg_gallery_columns",
+                "type": "select",
+                "instructions": "Select the number of columns",
+                "required": 1,
+                "conditional_logic": [
+                    [
+                        {
+                            "field": "field_54d0bbff52a4c",
+                            "operator": "==",
+                            "value": "fitRows"
+                        }
+                    ],
+                    [
+                        {
+                            "field": "field_54d0bbff52a4c",
+                            "operator": "==",
+                            "value": "masonry"
+                        }
+                    ]
+                ],
+                "wrapper": {
+                    "width": 50,
+                    "class": "",
+                    "id": ""
+                },
+                "choices": {
+                    "1": 1,
+                    "2": 2,
+                    "3": 3,
+                    "4": 4
+                },
+                "default_value": {
+                    "": ""
+                },
+                "allow_null": 0,
+                "multiple": 0,
+                "ui": 0,
+                "ajax": 0,
+                "placeholder": "",
+                "disabled": 0,
+                "readonly": 0
+            },
+            {
+                "key": "field_54d0bbff53dd9",
+                "label": "Number of posts to show",
+                "name": "gg_gallery_no_of_posts_to_show",
+                "type": "text",
+                "instructions": "Insert the number of gallery posts to show",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": 50,
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": 10,
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": "",
+                "readonly": 0,
+                "disabled": 0
+            },
+            {
+                "key": "field_54f09153f4468",
+                "label": "Gallery pagination",
+                "name": "gg_gallery_pagination",
+                "type": "select",
+                "instructions": "Select the gallery pagination",
+                "required": 0,
+                "conditional_logic": [
+                    [
+                        {
+                            "field": "field_54d0bbff52a4c",
+                            "operator": "==",
+                            "value": "fitRows"
+                        }
+                    ],
+                    [
+                        {
+                            "field": "field_54d0bbff52a4c",
+                            "operator": "==",
+                            "value": "masonry"
+                        }
+                    ]
+                ],
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "choices": {
+                    "numbered": "Numbered pagination",
+                    "ajax_load": "Ajax load more pagination"
+                },
+                "default_value": {
+                    "numbered": "numbered"
+                },
+                "allow_null": 0,
+                "multiple": 0,
+                "ui": 0,
+                "ajax": 0,
+                "placeholder": "",
+                "disabled": 0,
+                "readonly": 0
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "page_template",
+                    "operator": "==",
+                    "value": "theme-templates\/gallery.php"
+                }
+            ]
+        ],
+        "menu_order": 2,
+        "position": "normal",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": "",
+        "active": 1,
+        "description": ""
+    },
+    {
+        "key": "group_546f25c33193d",
+        "title": "Post Options",
+        "fields": [
+            {
+                "key": "field_546f25d44af1e",
+                "label": "Social share",
+                "name": "gg_post_social_share",
+                "type": "true_false",
+                "instructions": "Enable\/Disable social share on post",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "message": "",
+                "default_value": 1
+            },
+            {
+                "key": "field_54bfb0c1e5f56",
+                "label": "Post navigation",
+                "name": "gg_post_navigation",
+                "type": "true_false",
+                "instructions": "Enable\/Disable the posts navigation",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "message": "",
+                "default_value": 1
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "post_type",
+                    "operator": "==",
+                    "value": "post"
+                }
+            ]
+        ],
+        "menu_order": 2,
+        "position": "normal",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": "",
+        "active": 1,
+        "description": ""
+    },
+    {
+        "key": "group_5464cf5f3e820",
+        "title": "Page Options",
+        "fields": [
+            {
+                "key": "field_55a7b72d264bc",
+                "label": "Header",
+                "name": "",
+                "type": "tab",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "placement": "top",
+                "endpoint": 0
+            },
+            {
+                "key": "field_5464cfec33375",
+                "label": "Page header",
+                "name": "gg_page_header",
+                "type": "true_false",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "message": "Enable\/Disable page header.",
+                "default_value": 1
+            },
+            {
+                "key": "field_56ebe432b6184",
+                "label": "Page header style",
+                "name": "gg_page_header_style",
+                "type": "select",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": [
+                    [
+                        {
+                            "field": "field_5464cfec33375",
+                            "operator": "==",
+                            "value": "1"
+                        }
+                    ]
+                ],
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "choices": {
+                    "style1": "Style 1",
+                    "style2": "Style 2"
+                },
+                "default_value": {
+                    "style1": "Style 1"
+                },
+                "allow_null": 0,
+                "multiple": 0,
+                "ui": 0,
+                "ajax": 0,
+                "placeholder": "",
+                "disabled": 0,
+                "readonly": 0
+            },
+            {
+                "key": "field_5549e6f6d39ee",
+                "label": "Page breadcrumbs",
+                "name": "gg_page_breadcrumbs",
+                "type": "true_false",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": [
+                    [
+                        {
+                            "field": "field_5464cfec33375",
+                            "operator": "==",
+                            "value": "1"
+                        }
+                    ]
+                ],
+                "wrapper": {
+                    "width": 50,
+                    "class": "",
+                    "id": ""
+                },
+                "message": "Enable\/Disable page breadcrumbs",
+                "default_value": 0
+            },
+            {
+                "key": "field_5464d01033376",
+                "label": "Page title",
+                "name": "gg_page_title",
+                "type": "true_false",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": [
+                    [
+                        {
+                            "field": "field_5464cfec33375",
+                            "operator": "==",
+                            "value": "1"
+                        }
+                    ]
+                ],
+                "wrapper": {
+                    "width": 50,
+                    "class": "",
+                    "id": ""
+                },
+                "message": "Enable\/Disable page title.",
+                "default_value": 1
+            },
+            {
+                "key": "field_56e81eabc9f18",
+                "label": "Page subtitle",
+                "name": "gg_page_subtitle",
+                "type": "text",
+                "instructions": "Insert the page subtitle",
+                "required": 0,
+                "conditional_logic": [
+                    [
+                        {
+                            "field": "field_5464cfec33375",
+                            "operator": "==",
+                            "value": "1"
+                        }
+                    ]
+                ],
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": "",
+                "readonly": 0,
+                "disabled": 0
+            },
+            {
+                "key": "field_5464d02f33377",
+                "label": "Page description",
+                "name": "gg_page_description",
+                "type": "textarea",
+                "instructions": "Insert your page short description here.",
+                "required": 0,
+                "conditional_logic": [
+                    [
+                        {
+                            "field": "field_5464cfec33375",
+                            "operator": "==",
+                            "value": "1"
+                        },
+                        {
+                            "field": "field_5464cfec33375",
+                            "operator": "==",
+                            "value": "1"
+                        }
+                    ]
+                ],
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "maxlength": "",
+                "rows": "",
+                "new_lines": "wpautop",
+                "readonly": 0,
+                "disabled": 0
+            },
+            {
+                "key": "field_55a7b764264bd",
+                "label": "Header Slideshow",
+                "name": "",
+                "type": "tab",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "placement": "top",
+                "endpoint": 0
+            },
+            {
+                "key": "field_55cb13fa97ee2",
+                "label": "Header slideshow info",
+                "name": "",
+                "type": "message",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "message": "You can display a Revolution Slider in the theme header, under the menu.",
+                "esc_html": 0,
+                "new_lines": "wpautop"
+            },
+            {
+                "key": "field_54af910f75f0e",
+                "label": "Page header slideshow",
+                "name": "gg_page_header_slider",
+                "type": "true_false",
+                "instructions": "Enable\/disable page slideshow",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "message": "",
+                "default_value": 0
+            },
+            {
+                "key": "field_54af96c4857a4",
+                "label": "Slideshow",
+                "name": "gg_page_header_slider_select",
+                "type": "select",
+                "instructions": "Select the slideshow",
+                "required": 0,
+                "conditional_logic": [
+                    [
+                        {
+                            "field": "field_54af910f75f0e",
+                            "operator": "==",
+                            "value": "1"
+                        }
+                    ]
+                ],
+                "wrapper": {
+                    "width": 50,
+                    "class": "",
+                    "id": ""
+                },
+                "choices": {
+                    "web-product-dark": "web-product-dark",
+                    "main-slideshow": "main-slideshow"
+                },
+                "default_value": [
+
+                ],
+                "allow_null": 0,
+                "multiple": 0,
+                "ui": 0,
+                "ajax": 0,
+                "placeholder": "",
+                "disabled": 0,
+                "readonly": 0
+            },
+            {
+                "key": "field_560a740244924",
+                "label": "Slideshow position",
+                "name": "gg_page_header_slider_position",
+                "type": "select",
+                "instructions": "Select the slider position",
+                "required": 0,
+                "conditional_logic": [
+                    [
+                        {
+                            "field": "field_54af910f75f0e",
+                            "operator": "==",
+                            "value": "1"
+                        }
+                    ]
+                ],
+                "wrapper": {
+                    "width": 50,
+                    "class": "",
+                    "id": ""
+                },
+                "choices": {
+                    "under_header": "Under the header",
+                    "beneath_header": "Beneath the header"
+                },
+                "default_value": {
+                    "under_header": "under_header"
+                },
+                "allow_null": 0,
+                "multiple": 0,
+                "ui": 0,
+                "ajax": 0,
+                "placeholder": "",
+                "disabled": 0,
+                "readonly": 0
+            },
+            {
+                "key": "field_5600f8434100f",
+                "label": "Page background",
+                "name": "",
+                "type": "tab",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "placement": "top",
+                "endpoint": 0
+            },
+            {
+                "key": "field_5600f8024100e",
+                "label": "Background",
+                "name": "gg_page_background",
+                "type": "image",
+                "instructions": "Upload an image background",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "return_format": "url",
+                "preview_size": "thumbnail",
+                "library": "all",
+                "min_width": "",
+                "min_height": "",
+                "min_size": "",
+                "max_width": "",
+                "max_height": "",
+                "max_size": "",
+                "mime_types": ""
+            },
+            {
+                "key": "field_560a9110a890c",
+                "label": "Overwrite header style",
+                "name": "",
+                "type": "tab",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "placement": "top",
+                "endpoint": 0
+            },
+            {
+                "key": "field_560a924898ff0",
+                "label": "Overwrite header style on page",
+                "name": "gg_overwrite_header_style_on_page",
+                "type": "true_false",
+                "instructions": "Overwrite the header style set in the theme options only on this specific page.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "message": "",
+                "default_value": 0
+            },
+            {
+                "key": "field_560a917ba890e",
+                "label": "Page menu design",
+                "name": "gg_page_menu_design",
+                "type": "select",
+                "instructions": "Select the menu design",
+                "required": 0,
+                "conditional_logic": [
+                    [
+                        {
+                            "field": "field_560a924898ff0",
+                            "operator": "==",
+                            "value": "1"
+                        }
+                    ]
+                ],
+                "wrapper": {
+                    "width": 33,
+                    "class": "",
+                    "id": ""
+                },
+                "choices": {
+                    "light": "Light",
+                    "dark": "Dark"
+                },
+                "default_value": {
+                    "light": "light"
+                },
+                "allow_null": 0,
+                "multiple": 0,
+                "ui": 0,
+                "ajax": 0,
+                "placeholder": "",
+                "disabled": 0,
+                "readonly": 0
+            },
+            {
+                "key": "field_560a91a2a890f",
+                "label": "Page menu style",
+                "name": "gg_page_menu_style",
+                "type": "select",
+                "instructions": "Select the menu style",
+                "required": 0,
+                "conditional_logic": [
+                    [
+                        {
+                            "field": "field_560a924898ff0",
+                            "operator": "==",
+                            "value": "1"
+                        }
+                    ]
+                ],
+                "wrapper": {
+                    "width": 33,
+                    "class": "",
+                    "id": ""
+                },
+                "choices": {
+                    "style_1": "With logo on the left side",
+                    "style_2": "With logo in the center"
+                },
+                "default_value": {
+                    "style_1": "style_1"
+                },
+                "allow_null": 0,
+                "multiple": 0,
+                "ui": 0,
+                "ajax": 0,
+                "placeholder": "",
+                "disabled": 0,
+                "readonly": 0
+            },
+            {
+                "key": "field_560a91d0a8910",
+                "label": "Page menu width",
+                "name": "gg_page_menu_width",
+                "type": "select",
+                "instructions": "Select the menu width",
+                "required": 0,
+                "conditional_logic": [
+                    [
+                        {
+                            "field": "field_560a924898ff0",
+                            "operator": "==",
+                            "value": "1"
+                        }
+                    ]
+                ],
+                "wrapper": {
+                    "width": 33,
+                    "class": "",
+                    "id": ""
+                },
+                "choices": {
+                    "fullwidth": "Fullwidth",
+                    "boxed": "Boxed"
+                },
+                "default_value": {
+                    "fullwidth": "fullwidth"
+                },
+                "allow_null": 0,
+                "multiple": 0,
+                "ui": 0,
+                "ajax": 0,
+                "placeholder": "",
+                "disabled": 0,
+                "readonly": 0
+            },
+            {
+                "key": "field_560a914ea890d",
+                "label": "Page sticky menu",
+                "name": "gg_page_sticky_menu",
+                "type": "true_false",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": [
+                    [
+                        {
+                            "field": "field_560a924898ff0",
+                            "operator": "==",
+                            "value": "1"
+                        }
+                    ]
+                ],
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "message": "",
+                "default_value": 0
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "page_template",
+                    "operator": "==",
+                    "value": "default"
+                }
+            ],
+            [
+                {
+                    "param": "page_template",
+                    "operator": "==",
+                    "value": "theme-templates\/blog.php"
+                }
+            ],
+            [
+                {
+                    "param": "page_template",
+                    "operator": "==",
+                    "value": "theme-templates\/gallery.php"
+                }
+            ],
+            [
+                {
+                    "param": "page_template",
+                    "operator": "==",
+                    "value": "theme-templates\/contact.php"
+                }
+            ]
+        ],
+        "menu_order": 4,
+        "position": "normal",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": "",
+        "active": 1,
+        "description": ""
+    },
+    {
+        "key": "group_545fd8502b9c3",
+        "title": "Contact Page Options",
+        "fields": [
+            {
+                "key": "field_55ae082dc8bbc",
+                "label": "Address",
+                "name": "",
+                "type": "tab",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "placement": "top",
+                "endpoint": 0
+            },
+            {
+                "key": "field_56f25f582e6ad",
+                "label": "Show map",
+                "name": "gg_contact_show_map",
+                "type": "true_false",
+                "instructions": "Show\/hide map",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "message": "",
+                "default_value": 1
+            },
+            {
+                "key": "field_552fa792bf02c",
+                "label": "Addresses",
+                "name": "gg_contact_addresses",
+                "type": "repeater",
+                "instructions": "If your clinic has more addresses you can add them here.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "collapsed": "field_552fb42cd9258",
+                "min": "",
+                "max": "",
+                "layout": "block",
+                "button_label": "Add Address",
+                "sub_fields": [
+                    {
+                        "key": "field_552fb42cd9258",
+                        "label": "Latitude",
+                        "name": "gg_contact_map_latitude",
+                        "type": "text",
+                        "instructions": "Enter the latitude value of your location in this format 51.13456\r\nLatitude value is the first string (before comma) of google map address. E.G.: 51.13456, -1.34333",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": 50,
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": "",
+                        "readonly": 0,
+                        "disabled": 0
+                    },
+                    {
+                        "key": "field_552fb45fd9259",
+                        "label": "Longitude",
+                        "name": "gg_contact_map_longitude",
+                        "type": "text",
+                        "instructions": "Enter the longitude value of your location in this format -1.34333\r\nLatitude value is the second string (after comma) of google map address. E.G.: 51.13456, -1.34333",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": 50,
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": "",
+                        "readonly": 0,
+                        "disabled": 0
+                    },
+                    {
+                        "key": "field_552fb5a4ea9b3",
+                        "label": "Zoom",
+                        "name": "gg_contact_map_zoom",
+                        "type": "text",
+                        "instructions": "Insert the zoom factor. Default: 10",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": 10,
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": "",
+                        "readonly": 0,
+                        "disabled": 0
+                    },
+                    {
+                        "key": "field_552fb49ed925b",
+                        "label": "InfoWindow",
+                        "name": "gg_contact_map_infowindow",
+                        "type": "textarea",
+                        "instructions": "Insert your address details. Will appear after you click on the marker icon.",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "placeholder": "",
+                        "maxlength": "",
+                        "rows": "",
+                        "new_lines": "",
+                        "readonly": 0,
+                        "disabled": 0
+                    }
+                ]
+            },
+            {
+                "key": "field_546dcd2bd9317",
+                "label": "Contact form",
+                "name": "",
+                "type": "tab",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "placement": "top",
+                "endpoint": 0
+            },
+            {
+                "key": "field_545fd8677d64f",
+                "label": "Contact form",
+                "name": "gg_contact_form",
+                "type": "true_false",
+                "instructions": "Enable\/disable contact form. Default: true",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "message": "",
+                "default_value": 1
+            },
+            {
+                "key": "field_552fcae4de0cb",
+                "label": "Description",
+                "name": "gg_contact_form_description",
+                "type": "textarea",
+                "instructions": "Describe your contact form.",
+                "required": 0,
+                "conditional_logic": [
+                    [
+                        {
+                            "field": "field_545fd8677d64f",
+                            "operator": "==",
+                            "value": "1"
+                        }
+                    ]
+                ],
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "maxlength": "",
+                "rows": "",
+                "new_lines": "",
+                "readonly": 0,
+                "disabled": 0
+            },
+            {
+                "key": "field_545fd9b10cb74",
+                "label": "Email address",
+                "name": "gg_contact_page_email",
+                "type": "text",
+                "instructions": "Enter your email address. On this address you will receive the emails from this contact form. If the email is not set it defaults to the admin email from Settings >> General.",
+                "required": 0,
+                "conditional_logic": [
+                    [
+                        {
+                            "field": "field_545fd8677d64f",
+                            "operator": "==",
+                            "value": "1"
+                        }
+                    ]
+                ],
+                "wrapper": {
+                    "width": 50,
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": "",
+                "readonly": 0,
+                "disabled": 0
+            },
+            {
+                "key": "field_546de0476002b",
+                "label": "From: Email address",
+                "name": "gg_contact_page_email_from",
+                "type": "text",
+                "instructions": "Enter the FROM email address. E.G.: noreply@yoursitename.com",
+                "required": 0,
+                "conditional_logic": [
+                    [
+                        {
+                            "field": "field_545fd8677d64f",
+                            "operator": "==",
+                            "value": "1"
+                        }
+                    ]
+                ],
+                "wrapper": {
+                    "width": 50,
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "noreply@yoursitename.com",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": "",
+                "readonly": 0,
+                "disabled": 0
+            },
+            {
+                "key": "field_545fda0b7c2ec",
+                "label": "Success text",
+                "name": "gg_contact_page_success_msg",
+                "type": "text",
+                "instructions": "Enter the success message that will be displayed on successful email delivery.",
+                "required": 0,
+                "conditional_logic": [
+                    [
+                        {
+                            "field": "field_545fd8677d64f",
+                            "operator": "==",
+                            "value": "1"
+                        }
+                    ]
+                ],
+                "wrapper": {
+                    "width": 50,
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "Your message was sent successfully.",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": "",
+                "readonly": 0,
+                "disabled": 0
+            },
+            {
+                "key": "field_545fda6446ed5",
+                "label": "Error text",
+                "name": "gg_contact_page_error_msg",
+                "type": "text",
+                "instructions": "Enter the error message that will be displayed on  email delivery failure.",
+                "required": 0,
+                "conditional_logic": [
+                    [
+                        {
+                            "field": "field_545fd8677d64f",
+                            "operator": "==",
+                            "value": "1"
+                        }
+                    ]
+                ],
+                "wrapper": {
+                    "width": 50,
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "There was an error submitting the form.",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": "",
+                "readonly": 0,
+                "disabled": 0
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "page_template",
+                    "operator": "==",
+                    "value": "theme-templates\/contact.php"
+                }
+            ]
+        ],
+        "menu_order": 30,
+        "position": "normal",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": "",
+        "active": 1,
+        "description": ""
+    }
+]

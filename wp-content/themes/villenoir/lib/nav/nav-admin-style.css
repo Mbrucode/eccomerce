@@ -1,0 +1,28 @@
+.hidden,
+.menu-item-depth-0 .gg-nav-extra-html,
+.menu-item-depth-0 .gg-nav-hide-label {
+	display: none;
+}
+
+.menu-item-depth-0 .hidden {
+	display: block;
+}
+
+
+.menu-custom-fields-holder {
+	border: 1px solid #ddd;
+	background: #ffffe1;
+
+	float: left;
+	width: calc(100% - 24px);
+	padding: 10px 0 10px 10px;
+	margin-top: 10px;
+}
+
+.menu-custom-fields-holder .description-wide {
+    width: 368px;
+}
+
+.menu-custom-fields-holder .description-thin {
+	width: 179px;
+}

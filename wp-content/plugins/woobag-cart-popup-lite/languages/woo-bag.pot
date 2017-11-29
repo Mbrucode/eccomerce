@@ -1,0 +1,316 @@
+# Loco Gettext template
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: WooBag\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: Wed Jul 08 2015 11:56:55 GMT+0500 (Pakistan Standard "
+"Time)\n"
+"POT-Revision-Date: Fri Sep 04 2015 10:21:58 GMT+0500 (Pakistan Standard "
+"Time)\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: \n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-SearchPath-0: ..\n"
+"X-Poedit-KeywordsList: _:1;gettext:1;dgettext:2;ngettext:1,2;dngettext:2,3;"
+"__:1;_e:1;_c:1;_n:1,2;_n_noop:1,2;_nc:1,2;__ngettext:1,2;__ngettext_noop:1,2;"
+"_x:1,2c;_ex:1,2c;_nx:1,2,4c;_nx_noop:1,2,3c;_n_js:1,2;_nx_js:1,2,3c;"
+"esc_attr__:1;esc_html__:1;esc_attr_e:1;esc_html_e:1;esc_attr_x:1,2c;"
+"esc_html_x:1,2c;comments_number_link:2,3;t:1;st:1;trans:1;transChoice:1,2\n"
+"X-Generator: Loco - https://localise.biz/"
+
+#: ../woo-bag.php:339
+msgid "Active WooCommerce"
+msgstr ""
+
+#: ../woo-bag.php:339
+msgid "Notice"
+msgstr ""
+
+#: ../woo-bag.php:340
+msgid "This plugin requires WooCommerce. Activate WooCommerce before make changes"
+msgstr ""
+
+#: ../woo-bag.php:366 ../woo-bag.php:366
+msgid "WooBag"
+msgstr ""
+
+#: ../woo-bag.php:367
+msgid "About WooBag"
+msgstr ""
+
+#: ../woo-bag.php:367
+msgid "About "
+msgstr ""
+
+#: ../woo-bag.php:368
+msgid "WooBag Templates"
+msgstr ""
+
+#: ../woo-bag.php:368 ../admin/templates/woo-bag-template.php:20
+msgid "Templates"
+msgstr ""
+
+#: ../woo-bag.php:369
+msgid "WooBag Settings"
+msgstr ""
+
+#: ../woo-bag.php:369 ../includes/class-woo-bag-activator.php:38
+msgid "Settings"
+msgstr ""
+
+#: ../woo-bag.php:383
+msgid "WooBag Setting"
+msgstr ""
+
+#: ../woo-bag.php:387
+msgid "Active Template"
+msgstr ""
+
+#: ../woo-bag.php:401
+msgid "Edit Template"
+msgstr ""
+
+#: ../admin/class-woo-bag-setting-framework.php:77
+msgid "WooBag settings must be an array"
+msgstr ""
+
+#: ../admin/class-woo-bag-setting-framework.php:601
+msgid "Save Changes"
+msgstr ""
+
+#: ../admin/class-woo-bag-setting-framework.php:603
+msgid "Save and Active"
+msgstr ""
+
+#: ../admin/class-woo-bag-setting-framework.php:605 ../admin/templates/woo-bag-
+#: template.php:98
+msgid "Copy as new template"
+msgstr ""
+
+#: ../admin/templates/woo-bag-about.php:9
+msgid "Welcome to WooBag"
+msgstr ""
+
+#: ../admin/templates/woo-bag-about.php:13
+msgid ""
+"Thanks for installing! WooBag 1.0.0 is more powerful, stable and secure than "
+"ever before. We hope you enjoy using it."
+msgstr ""
+
+#: ../admin/templates/woo-bag-about.php:63
+msgid "Designed for You"
+msgstr ""
+
+#: ../admin/templates/woo-bag-about.php:65
+msgid ""
+"We carefully designed various flexible cards with simplicity in mind. Once "
+"you add your own content, your site will be unique and special."
+msgstr ""
+
+#: ../admin/templates/woo-bag-about.php:69
+msgid "Fully Responsive"
+msgstr ""
+
+#: ../admin/templates/woo-bag-about.php:71
+msgid ""
+"We spent a lot of time designing a perfect responsive plugin so your site "
+"will scale flawlessly across any device."
+msgstr ""
+
+#: ../admin/templates/woo-bag-about.php:75
+msgid "No Need to Code"
+msgstr ""
+
+#: ../admin/templates/woo-bag-about.php:77
+msgid ""
+"You can create a full design without having to deal with complex software or "
+"even think about coding."
+msgstr ""
+
+#: ../admin/templates/woo-bag-about.php:82
+msgid "Pre-Built Templates"
+msgstr ""
+
+#: ../admin/templates/woo-bag-about.php:84
+msgid ""
+"Use pre-built Template included with WooBag plugin, or create your own "
+"custom Template"
+msgstr ""
+
+#: ../admin/templates/woo-bag-about.php:88
+msgid "Custom Styling"
+msgstr ""
+
+#: ../admin/templates/woo-bag-about.php:90
+msgid ""
+"Take full control of your WooBag. Style everything from color, background, "
+"font, border, and even the animation effects!"
+msgstr ""
+
+#: ../admin/templates/woo-bag-about.php:102
+msgid "Designed for You About Creators"
+msgstr ""
+
+#: ../admin/templates/woo-bag-admin-display-content.php:46 ../includes/wb-cart-
+#: functions.php:205 ../public/templates/woo-bag-public-display-content.php:465
+#, php-format
+msgid "Save: %s"
+msgstr ""
+
+#: ../admin/templates/woo-bag-admin-display-content.php:58
+msgid "Tax: "
+msgstr ""
+
+#: ../admin/templates/woo-bag-admin-display.php:133 ../includes/wb-cart-functions.
+#: php:294 ../public/templates/woo-bag-public-display-content.php:183
+msgid "Subtotal"
+msgstr ""
+
+#: ../admin/templates/woo-bag-admin-display.php:143 ../includes/wb-cart-functions.
+#: php:282 ../public/templates/woo-bag-public-display-content.php:171
+msgid "Order Total"
+msgstr ""
+
+#: ../admin/templates/woo-bag-admin-display.php:163 ../includes/wb-cart-functions.
+#: php:312 ../public/templates/woo-bag-public-display-content.php:207
+msgid "View Bag"
+msgstr ""
+
+#: ../admin/templates/woo-bag-admin-display.php:171 ../includes/wb-cart-functions.
+#: php:320 ../public/templates/woo-bag-public-display-content.php:218
+msgid "Checkout"
+msgstr ""
+
+#: ../admin/templates/woo-bag-admin-display.php:179 ../includes/wb-cart-functions.
+#: php:327 ../includes/wb-cart-functions.php:334 ../public/templates/woo-bag-
+#: public-display-content.php:229 ../public/templates/woo-bag-public-display-
+#: content.php:240
+msgid "Empty Cart"
+msgstr ""
+
+#: ../admin/templates/woo-bag-admin-display.php:187
+msgid "Custom"
+msgstr ""
+
+#: ../admin/templates/woo-bag-template.php:23
+msgid "Get Shortcode"
+msgstr ""
+
+#: ../admin/templates/woo-bag-template.php:24
+msgid "Create New Template"
+msgstr ""
+
+#: ../admin/templates/woo-bag-template.php:38
+msgid "Template Name"
+msgstr ""
+
+#: ../admin/templates/woo-bag-template.php:42
+msgid "Status"
+msgstr ""
+
+#: ../admin/templates/woo-bag-template.php:46
+msgid "Author"
+msgstr ""
+
+#: ../admin/templates/woo-bag-template.php:50
+msgid "Created Date"
+msgstr ""
+
+#: ../admin/templates/woo-bag-template.php:54
+msgid "Action"
+msgstr ""
+
+#: ../admin/templates/woo-bag-template.php:78
+msgid "Active"
+msgstr ""
+
+#: ../admin/templates/woo-bag-template.php:80
+msgid "InActive"
+msgstr ""
+
+#: ../admin/templates/woo-bag-template.php:91
+msgid "Activate"
+msgstr ""
+
+#: ../admin/templates/woo-bag-template.php:93
+msgid "Edit"
+msgstr ""
+
+#: ../admin/templates/woo-bag-template.php:95
+msgid "Delete"
+msgstr ""
+
+#: ../admin/templates/woo-bag-template.php:96
+msgid "Rename Template"
+msgstr ""
+
+#: ../includes/class-woo-bag-activator.php:38
+msgid "View WooBag Settings"
+msgstr ""
+
+#: ../includes/wb-cart-functions.php:183 ../public/templates/woo-bag-public-
+#: display-content.php:443
+msgid "Quantity"
+msgstr ""
+
+#: ../includes/wb-cart-functions.php:189 ../includes/wb-cart-functions.php:198 ..
+#: public/templates/woo-bag-public-display-content.php:449 ..
+#: public/templates/woo-bag-public-display-content.php:458
+msgid "Price"
+msgstr ""
+
+#: ../includes/wb-cart-functions.php:208 ../public/templates/woo-bag-public-
+#: display-content.php:468
+msgid "0.00"
+msgstr ""
+
+#: ../includes/wb-cart-functions.php:213 ../public/templates/woo-bag-public-
+#: display-content.php:473
+msgid "Tax"
+msgstr ""
+
+#: ../includes/wb-core-functions.php:230 ../includes/wb-core-functions.php:2135 ..
+#: public/templates/woo-bag-public-icon.php:62
+msgid "Item"
+msgstr ""
+
+#: ../includes/wb-core-functions.php:231 ../includes/wb-core-functions.php:2136 ..
+#: public/templates/woo-bag-public-icon.php:63
+msgid "Items"
+msgstr ""
+
+#: ../includes/widgets/class-woo-bag-widget.php:22
+msgid "Display the user's Cart with timer and other options."
+msgstr ""
+
+#: ../includes/widgets/class-woo-bag-widget.php:24
+msgid "Woo Bag"
+msgstr ""
+
+#: ../includes/widgets/class-woo-bag-widget.php:29
+msgid "WooBag Type"
+msgstr ""
+
+#: ../includes/widgets/class-woo-bag-widget.php:38
+msgid "WooBag Position"
+msgstr ""
+
+#: ../includes/widgets/class-woo-bag-widget.php:47
+msgid "Top Position"
+msgstr ""
+
+#: ../includes/widgets/class-woo-bag-widget.php:52
+msgid "Left Position"
+msgstr ""
+
+#: ../includes/widgets/class-woo-bag-widget.php:57
+msgid "Right Position"
+msgstr ""
